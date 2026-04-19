@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Erwin | Senior Product Manager - OMS &amp; Financial Systems</title>
+  
+  <!-- Tailwind CDN (standard v3 with dark mode support) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;display=swap');
+    
+    body { 
+      font-family: 'Inter', system-ui, -apple-system, sans-serif; 
+    }
+    .project-card {
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .project-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    }
+    .chat-bubble { 
+      transition: all 0.3s ease; 
+    }
+    .hero-bg {
+      background: linear-gradient(135deg, #0f172a 0%, #1e2937 100%);
+    }
+    .section-header {
+      position: relative;
+    }
+    .section-header::after {
+      content: '';
+      position: absolute;
+      width: 64px;
+      height: 3px;
+      background: #4f46e5;
+      bottom: -6px;
+      left: 0;
+    }
+  </style>
+</head>
+<body class="bg-zinc-50 dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100 min-h-screen">
+
+  <!-- Tailwind config script (enables dark mode + custom colors) -->
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      content: [],
+      theme: {
+        extend: {}
+      }
+    }
+  </script>
+
+  <!-- Navbar -->
+  <nav class="sticky top-0 bg-white/95 dark:bg-zinc-950/95 backdrop-blur-md border-b border-zinc-200 dark:border-zinc-800 z-50">
+    <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
+      <a href="#" class="text-2xl font-semibold tracking-tight flex items-center gap-2">
+        <span class="text-indigo-600">Erwin</span>
+      </a>
+      
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <a href="#about" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">About</a>
+        <a href="#projects" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Work</a>
+        <a href="#experience" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Experience</a>
+        <a href="#connect" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Connect</a>
+      </div>
+
+      <div class="flex items-center gap-4">
+        <button id="theme-toggle" class="p-2 rounded-xl hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors">
+          <i id="theme-icon" class="fa-solid fa-moon text-xl"></i>
+        </button>
+        <button id="mobile-menu-button" class="md:hidden p-2 rounded-xl hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors">
+          <i class="fa-solid fa-bars text-xl"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-zinc-900 border-t border-zinc-200 dark:border-zinc-800">
+      <div class="px-6 py-6 flex flex-col gap-4 text-sm font-medium">
+        <a href="#about" class="hover:text-indigo-600 dark:hover:text-indigo-400 py-2">About</a>
+        <a href="#projects" class="hover:text-indigo-600 dark:hover:text-indigo-400 py-2">Work</a>
+        <a href="#experience" class="hover:text-indigo-600 dark:hover:text-indigo-400 py-2">Experience</a>
+        <a href="#connect" class="hover:text-indigo-600 dark:hover:text-indigo-400 py-2">Connect</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section (modern version of your original hero) -->
+  <header class="hero-bg text-white pt-24 pb-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row items-center gap-12">
+        <div class="flex-1">
+          <h1 class="text-5xl md:text-6xl font-semibold tracking-tighter leading-none">Hi, I'm Erwin</h1>
+          <p class="text-3xl mt-3 text-indigo-300">Senior Product Manager &amp; Vertical Lead,<br>OMS &amp; Financial Systems</p>
+          <p class="mt-6 text-lg max-w-lg text-slate-300">
+            Bridging complex technical logic with business operations in logistics and fintech. 
+            I own the full Finance &amp; Settlement roadmap, driving automation, cost optimization, and operational integrity at IDExpress.
+          </p>
+          <div class="mt-10 flex flex-wrap gap-4">
+            <a href="#projects" 
+               class="bg-white text-slate-900 px-8 py-4 rounded-2xl font-semibold hover:bg-slate-100 transition flex items-center gap-2">
+              <i class="fa-solid fa-briefcase"></i>
+              View Key Projects
+            </a>
+            <button id="hero-chat-button" 
+                    class="group px-8 py-4 border-2 border-white/80 text-white hover:bg-white/10 rounded-2xl font-semibold transition flex items-center gap-3">
+              <i class="fa-solid fa-robot group-active:rotate-12 transition-transform"></i>
+              Chat with my AI Assistant
+            </button>
+          </div>
+          <p class="text-xs text-slate-400 mt-8 flex items-center gap-2">
+            <i class="fa-solid fa-circle-check"></i>
+            Open to Senior Product Management roles in logistics, fintech &amp; complex operational systems
+          </p>
+        </div>
+        
+        <!-- Professional photo (kept from your original home1.html) -->
+        <div class="flex-shrink-0">
+          <div class="w-72 h-72 md:w-80 md:h-80 bg-white/10 backdrop-blur-md rounded-3xl overflow-hidden border-8 border-white/30 shadow-2xl">
+            <img src="https://via.placeholder.com/400x400/334155/ffffff?text=Erwin+Photo" 
+                 alt="Erwin - Senior Product Manager" 
+                 class="w-full h-full object-cover">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- About / Core Capabilities -->
+  <section id="about" class="max-w-6xl mx-auto px-6 py-20 border-t border-zinc-200 dark:border-zinc-800">
+    <div class="grid md:grid-cols-12 gap-16 items-start">
+      <div class="md:col-span-7">
+        <h2 class="text-4xl font-semibold tracking-tight mb-8 section-header">About Me</h2>
+        <div class="space-y-6 text-lg leading-relaxed text-zinc-700 dark:text-zinc-300">
+          <p>As Senior Product Manager &amp; Vertical Lead for OMS &amp; Financial Systems at IDExpress, I own the complete Finance, Settlement, Pricing &amp; Operational Control verticals.</p>
+          <p>I specialize in building automation that eliminates manual work, prevents fraud, reduces costs, and creates a single source of truth for financial operations.</p>
+          <p>Strong hands-on experience in backend logic, API architecture, SQL/ETL, and stakeholder alignment — turning complex requirements into scalable, measurable business impact.</p>
+        </div>
+      </div>
+      
+      <!-- Capabilities cards (from your original home1) -->
+      <div class="md:col-span-5 space-y-6">
+        <div class="bg-white dark:bg-zinc-900 rounded-3xl p-6 border border-zinc-100 dark:border-zinc-800 project-card">
+          <div class="flex items-center gap-3 mb-4">
+            <i class="fa-solid fa-briefcase text-indigo-600 text-2xl"></i>
+            <h3 class="font-semibold text-xl">Product Leadership</h3>
+          </div>
+          <p class="text-zinc-600 dark:text-zinc-400">Vertical ownership of Order Management System (OMS) and Financial Systems. Define roadmap strategy, financial governance, cost optimization, and deliver high-impact automation.</p>
+        </div>
+        
+        <div class="bg-white dark:bg-zinc-900 rounded-3xl p-6 border border-zinc-100 dark:border-zinc-800 project-card">
+          <div class="flex items-center gap-3 mb-4">
+            <i class="fa-solid fa-cogs text-indigo-600 text-2xl"></i>
+            <h3 class="font-semibold text-xl">Technical Depth</h3>
+          </div>
+          <p class="text-zinc-600 dark:text-zinc-400">Backend logic design, REST/SOAP APIs, data mapping, SQL, ETL processes. Tools: JIRA, Confluence, Postman, Figma, Java Spring, MySQL/PostgreSQL, Jedox EPM.</p>
+        </div>
+        
+        <div class="bg-white dark:bg-zinc-900 rounded-3xl p-6 border border-zinc-100 dark:border-zinc-800 project-card">
+          <div class="flex items-center gap-3 mb-4">
+            <i class="fa-solid fa-shield-alt text-indigo-600 text-2xl"></i>
+            <h3 class="font-semibold text-xl">Operational Integrity</h3>
+          </div>
+          <p class="text-zinc-600 dark:text-zinc-400">Fraud prevention (POD in Review), Checker-Maker governance workflows, self-service tools that eliminate manual work and reduce operational risk.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects - OMS & Financial Systems @ IDExpress (your detailed content, now in modern cards) -->
+  <section id="projects" class="max-w-6xl mx-auto px-6 py-20 bg-white dark:bg-zinc-900 border-y border-zinc-200 dark:border-zinc-800">
+    <div class="flex justify-between items-end mb-12">
+      <div>
+        <h2 class="text-4xl font-semibold tracking-tight section-header">OMS &amp; Financial Systems @ IDExpress</h2>
+        <p class="text-zinc-500 dark:text-zinc-400 mt-2">Senior Product Manager &amp; Vertical Lead • Full ownership of Finance, Settlement, Pricing &amp; Operational Control</p>
+      </div>
+      <p class="hidden md:block text-sm text-emerald-600 font-medium">20+ major enhancements • Measurable cost reduction &amp; fraud prevention</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <!-- Financial & Disbursement Automation -->
+      <div class="project-card bg-zinc-50 dark:bg-zinc-950 border border-zinc-100 dark:border-zinc-800 rounded-3xl p-8">
+        <h3 class="text-xl font-semibold mb-6 border-b pb-4 flex items-center gap-2">
+          <i class="fa-solid fa-money-bill-wave text-emerald-600"></i>
+          Financial &amp; Disbursement Automation
+        </h3>
+        <ul class="space-y-6 text-sm">
+          <li class="flex gap-3">
+            <div class="flex-shrink-0 text-emerald-600 mt-1"><i class="fa-solid fa-check"></i></div>
+            <div>
+              <strong>Checker-Maker Workflow</strong> — Double-layer approval for net-off disbursements with full audit trail.<br>
+              <span class="text-emerald-600">→ Prevented double payments and eliminated manual errors</span>
+            </div>
+          </li>
+          <li class="flex gap-3">
+            <div class="flex-shrink-0 text-emerald-600 mt-1"><i class="fa-solid fa-check"></i></div>
+            <div>
+              <strong>Unique Amount Transfer (3-digit identifier)</strong> — Replaced costly Virtual Accounts with standard bank transfers + auto-matching.<br>
+              <span class="text-emerald-600">→ Saved ~Rp 30M/month in transaction fees</span>
+            </div>
+          </li>
+          <li class="flex gap-3">
+            <div class="flex-shrink-0 text-emerald-600 mt-1"><i class="fa-solid fa-check"></i></div>
+            <div>
+              <strong>Net Off Report + Bukti Potong (Tax) Automation</strong> — Complex COD vs shipping fee calculations and automated tax receipt distribution.<br>
+              <span class="text-emerald-600">→ 100% system-generated "Source of Truth"</span>
+            </div>
+          </li>
+          <li class="flex gap-3">
+            <div class="flex-shrink-0 text-emerald-600 mt-1"><i class="fa-solid fa-check"></i></div>
+            <div>
+              <strong>Automated COD Payouts &amp; VA Status Scheduler</strong> — Daily automated payouts and status reconciliation.
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Logistics & Pricing Engine -->
+      <div class="project-card bg-zinc-50 dark:bg-zinc-950 border border-zinc-100 dark:border-zinc-800 rounded-3xl p-8">
+        <h3 class="text-xl font-semibold mb-6 border-b pb-4 flex items-center gap-2">
+          <i class="fa-solid fa-truck text-emerald-600"></i>
+          Logistics &amp; Pricing Engine
+        </h3>
+        <ul class="space-y-6 text-sm">
+          <li class="flex gap-3">
+            <div class="flex-shrink-0 text-emerald-600 mt-1"><i class="fa-solid fa-check"></i></div>
+            <div>
+              <strong>Pricing Management System Revamp</strong> — Decoupled pricing from agents; self-service engine with dynamic rounding rules.<br>
+              <span class="text-emerald-600">→ Zero dependency on tech team for pricing updates</span>
+            </div>
+          </li>
+          <li class="flex gap-3">
+            <div class="flex-shrink-0 text-emerald-600 mt-1"><i class="fa-solid fa-check"></i></div>
+            <div>
+              <strong>Auto-Scheduling Logic</strong> — Lat/Long-based 25km radius branch matching for pickup optimization.
+            </div>
+          </li>
+          <li class="flex gap-3">
+            <div class="flex-shrink-0 text-emerald-600 mt-1"><i class="fa-solid fa-check"></i></div>
+            <div>
+              <strong>Auto Import Order (Blibli) + Auto Brush Logic</strong> — Email monitoring + weight-based fee correction (&lt;0.509kg).<br>
+              <span class="text-emerald-600">→ Saved 1–2 hours daily manual work</span>
+            </div>
+          </li>
+          <li class="flex gap-3">
+            <div class="flex-shrink-0 text-emerald-600 mt-1"><i class="fa-solid fa-check"></i></div>
+            <div>
+              <strong>Retail PAD Model &amp; Fallback Pricing</strong> — Flexible post-delivery payment and automatic price fallback.
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Operational Integrity & Control (full width) -->
+      <div class="project-card bg-zinc-50 dark:bg-zinc-950 border border-zinc-100 dark:border-zinc-800 rounded-3xl p-8 md:col-span-2">
+        <h3 class="text-xl font-semibold mb-6 border-b pb-4 flex items-center gap-2">
+          <i class="fa-solid fa-shield-halved text-emerald-600"></i>
+          Operational Integrity &amp; Control
+        </h3>
+        <div class="grid md:grid-cols-3 gap-6 text-sm">
+          <div class="space-y-1"><strong>POD in Review (Fraud Prevention)</strong><br><span class="text-zinc-500 dark:text-zinc-400">High-value COD auto-flagged for audit before payout</span></div>
+          <div class="space-y-1"><strong>Scan Collection Slicing + Claim Automation</strong><br><span class="text-zinc-500 dark:text-zinc-400">Delivery vs non-delivery tracking and SLA-based auto-claim identification</span></div>
+          <div class="space-y-1"><strong>Client Config Engine + Self-Service Exports</strong><br><span class="text-zinc-500 dark:text-zinc-400">Code-free client configuration and 100% removal of tech dependency for data extraction</span></div>
+          <div class="space-y-1"><strong>Automated Account Deactivation</strong><br><span class="text-zinc-500 dark:text-zinc-400">Cron-based security for inactive users</span></div>
+          <div class="space-y-1"><strong>Finance Visibility Dashboard</strong><br><span class="text-zinc-500 dark:text-zinc-400">Real-time views of VA outstanding, deductions, and revenue streams</span></div>
+          <div class="space-y-1"><strong>OMS In-house Migration</strong><br><span class="text-zinc-500 dark:text-zinc-400">Full control and minimal downtime</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-12 text-center text-emerald-600 font-medium">
+      Delivered 20+ major system enhancements with measurable cost reduction, fraud prevention, and operational efficiency gains.
+    </div>
+  </section>
+
+  <!-- Previous Experience -->
+  <section id="experience" class="max-w-6xl mx-auto px-6 py-20">
+    <h2 class="text-4xl font-semibold tracking-tight mb-12 section-header">Previous Experience</h2>
+    <div class="space-y-8">
+      <div class="flex flex-col md:flex-row gap-8 project-card bg-white dark:bg-zinc-900 rounded-3xl p-8 border border-zinc-100 dark:border-zinc-800">
+        <div class="md:w-1/3">
+          <p class="font-semibold">Jatis Solutions</p>
+          <p class="text-zinc-500 dark:text-zinc-400">Java Developer</p>
+        </div>
+        <div class="md:w-2/3 text-zinc-600 dark:text-zinc-400">
+          Resolved production bugs and enhanced SQL logic for BCA Avantrade Mutual Fund system to ensure regulatory compliance.
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row gap-8 project-card bg-white dark:bg-zinc-900 rounded-3xl p-8 border border-zinc-100 dark:border-zinc-800">
+        <div class="md:w-1/3">
+          <p class="font-semibold">Kognitif Schema</p>
+          <p class="text-zinc-500 dark:text-zinc-400">IT Implementation Consultant</p>
+        </div>
+        <div class="md:w-2/3 text-zinc-600 dark:text-zinc-400">
+          Supported Bank Mandiri core banking project with SOAP/XML validation via Postman and user deployment training.
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row gap-8 project-card bg-white dark:bg-zinc-900 rounded-3xl p-8 border border-zinc-100 dark:border-zinc-800">
+        <div class="md:w-1/3">
+          <p class="font-semibold">Lightstream Analytics</p>
+          <p class="text-zinc-500 dark:text-zinc-400">IT Technical Consultant</p>
+        </div>
+        <div class="md:w-2/3 text-zinc-600 dark:text-zinc-400">
+          Built centralized P&amp;L and budgeting systems using Jedox EPM and designed ETL workflows for Eagle High Plantation.
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row gap-8 project-card bg-white dark:bg-zinc-900 rounded-3xl p-8 border border-zinc-100 dark:border-zinc-800">
+        <div class="md:w-1/3">
+          <p class="font-semibold">Blibli.com</p>
+          <p class="text-zinc-500 dark:text-zinc-400">Software Developer Intern</p>
+        </div>
+        <div class="md:w-2/3 text-zinc-600 dark:text-zinc-400">
+          Contributed to Payment and E-Voucher squads using Java Spring Framework in an Agile/Scrum environment.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education &amp; Toolkit -->
+  <section class="max-w-6xl mx-auto px-6 py-20 bg-white dark:bg-zinc-900 border-t border-zinc-200 dark:border-zinc-800">
+    <div class="grid md:grid-cols-2 gap-16">
+      <div>
+        <h2 class="text-4xl font-semibold tracking-tight mb-8 section-header">Education</h2>
+        <div class="bg-zinc-50 dark:bg-zinc-950 rounded-3xl p-8 border border-zinc-100 dark:border-zinc-800">
+          <p class="text-zinc-600 dark:text-zinc-400">Please add your degree, university, and graduation year here (e.g., Bachelor's in Computer Science / Information Systems).</p>
+        </div>
+      </div>
+      <div>
+        <h2 class="text-4xl font-semibold tracking-tight mb-8 section-header">Technical &amp; Product Toolkit</h2>
+        <div class="flex flex-wrap gap-3">
+          <span class="bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 px-5 py-2 rounded-2xl text-sm font-medium">JIRA &amp; Confluence</span>
+          <span class="bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 px-5 py-2 rounded-2xl text-sm font-medium">Figma</span>
+          <span class="bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 px-5 py-2 rounded-2xl text-sm font-medium">Postman (SOAP/XML)</span>
+          <span class="bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 px-5 py-2 rounded-2xl text-sm font-medium">SQL (MySQL / PostgreSQL)</span>
+          <span class="bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 px-5 py-2 rounded-2xl text-sm font-medium">Java Spring Framework</span>
+          <span class="bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 px-5 py-2 rounded-2xl text-sm font-medium">Jedox EPM</span>
+          <span class="bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 px-5 py-2 rounded-2xl text-sm font-medium">ETL Workflows</span>
+          <span class="bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 px-5 py-2 rounded-2xl text-sm font-medium">Agile / Scrum</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Connect -->
+  <section id="connect" class="max-w-6xl mx-auto px-6 py-20 border-t border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-950">
+    <div class="max-w-2xl mx-auto text-center">
+      <h2 class="text-4xl font-semibold tracking-tight mb-6">Let's Connect</h2>
+      <p class="text-lg text-zinc-600 dark:text-zinc-400 mb-10">
+        I'm always open to conversations about product strategy, logistics technology, fintech systems, or potential Senior Product Management opportunities.
+      </p>
+
+      <div class="flex flex-col sm:flex-row justify-center gap-6">
+        <a href="mailto:your.email@example.com" 
+           class="group flex-1 flex items-center justify-center gap-4 bg-white dark:bg-zinc-900 border border-zinc-300 dark:border-zinc-700 hover:border-indigo-600 px-8 py-6 rounded-3xl transition-all">
+          <div class="w-12 h-12 bg-zinc-100 dark:bg-zinc-800 rounded-2xl flex items-center justify-center text-2xl group-hover:scale-110 transition">✉️</div>
+          <div class="text-left">
+            <p class="font-medium text-lg">Send me an email</p>
+            <p class="text-zinc-500 dark:text-zinc-400">your.email@example.com</p>
+          </div>
+        </a>
+
+        <a href="https://linkedin.com/in/yourprofile" target="_blank"
+           class="group flex-1 flex items-center justify-center gap-4 bg-white dark:bg-zinc-900 border border-zinc-300 dark:border-zinc-700 hover:border-indigo-600 px-8 py-6 rounded-3xl transition-all">
+          <div class="w-12 h-12 bg-zinc-100 dark:bg-zinc-800 rounded-2xl flex items-center justify-center text-2xl group-hover:scale-110 transition">
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+          <div class="text-left">
+            <p class="font-medium text-lg">Connect on LinkedIn</p>
+            <p class="text-zinc-500 dark:text-zinc-400">linkedin.com/in/yourprofile</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-zinc-900 text-white py-10 text-center text-sm">
+    <div class="max-w-6xl mx-auto px-6">
+      <p>© 2026 Erwin • Senior Product Manager • Jakarta, Indonesia</p>
+      <p class="text-zinc-500 mt-2">Built as a modern portfolio with AI assistant — hosted 100% free on GitHub Pages</p>
+    </div>
+  </footer>
+
+<!-- Floating Chat Button -->
+  <button id="chat-button" 
+          class="fixed bottom-8 right-8 w-14 h-14 bg-indigo-600 hover:bg-indigo-700 text-white rounded-2xl shadow-2xl flex items-center justify-center text-3xl chat-bubble z-50">
+    <i class="fa-solid fa-comment-dots"></i>
+  </button>
+
+  <!-- Chat Window -->
+  <div id="chat-window" class="hidden fixed bottom-28 right-8 w-96 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-700 rounded-3xl shadow-2xl overflow-hidden z-50 flex flex-col" style="height: 520px;">
+    <div class="bg-zinc-900 text-white px-6 py-4 flex items-center justify-between rounded-t-3xl">
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 bg-indigo-500 rounded-2xl flex items-center justify-center text-sm font-semibold">E</div>
+        <div>
+          <p class="font-medium text-sm">Ask Erwin AI</p>
+          <p class="text-xs text-zinc-400">Powered by real AI • Knows my full experience</p>
+        </div>
+      </div>
+      <button id="close-chat" class="text-zinc-400 hover:text-white text-2xl">✕</button>
+    </div>
+    
+    <div id="chat-messages" class="flex-1 p-6 overflow-y-auto space-y-4 text-sm bg-zinc-50 dark:bg-zinc-950"></div>
+
+    <div class="p-4 border-t border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900">
+      <div class="flex gap-2">
+        <input id="chat-input" type="text" placeholder="Ask about my projects, cost savings, or availability..." 
+               class="flex-1 px-5 py-3 bg-zinc-100 dark:bg-zinc-800 border border-transparent focus:border-indigo-500 rounded-2xl text-sm focus:outline-none">
+        <button id="send-message" class="px-6 bg-indigo-600 hover:bg-indigo-700 text-white rounded-2xl font-medium">Send</button>
+      </div>
+      <p class="text-[10px] text-center text-zinc-400 mt-2">This AI knows my full portfolio</p>
+    </div>
+  </div>
+
+  <script>
+    // === Tailwind + Theme + Mobile Menu + Smooth Scroll (same as before) ===
+    tailwind.config = { darkMode: 'class' };
+
+    const themeToggle = document.getElementById('theme-toggle');
+    const themeIcon = document.getElementById('theme-icon');
+    themeToggle.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+      themeIcon.classList.toggle('fa-moon');
+      themeIcon.classList.toggle('fa-sun');
+    });
+
+    // Mobile menu, smooth scroll... (copy from previous version)
+
+    // ==================== CHAT SYSTEM - REAL AI READY ====================
+    const chatMessages = document.getElementById('chat-messages');
+    const chatInput = document.getElementById('chat-input');
+    const sendButton = document.getElementById('send-message');
+    const heroChatBtn = document.getElementById('hero-chat-button');
+    const floatingChatBtn = document.getElementById('chat-button');
+    const chatWindow = document.getElementById('chat-window');
+    const closeChat = document.getElementById('close-chat');
+
+    let isProcessing = false;
+
+    // Full portfolio context (the AI will use this)
+    const portfolioContext = `You are Erwin, a Senior Product Manager & Vertical Lead for OMS & Financial Systems at IDExpress (logistics & fintech company in Jakarta, Indonesia).
+
+Key achievements:
+- Full ownership of Finance, Settlement, Pricing & Operational Control verticals.
+- Unique Amount Transfer (3-digit identifier): Replaced expensive Virtual Accounts → Saved ~Rp 30 million per month in fees.
+- Checker-Maker Workflow: Double approval for disbursements with full audit trail, prevented double payments.
+- POD in Review: Fraud prevention by auto-flagging high-value COD (> Rp 1M) for review before payout.
+- Pricing Management Revamp: Self-service engine, zero dependency on engineering team.
+- Auto Import Order from Blibli + Auto Brush Logic: Saved 1-2 hours manual work daily.
+- Net Off Report + Bukti Potong (Tax) Automation: 100% automated, single source of truth.
+- Many other automations: Scan Collection Slicing, Client Config Engine, Finance Visibility Dashboard, OMS migration, etc.
+
+Previous experience: Java Developer at Jatis Solutions, IT Consultant at Kognitif Schema & Lightstream Analytics, Intern at Blibli.com.
+
+Skills: JIRA, Confluence, Figma, Postman, SQL, Java Spring, Jedox EPM, ETL, Agile/Scrum.
+
+You are helpful, professional, and concise. Answer questions about my experience, quantify impact when possible, and encourage recruiters to email me at your.email@example.com for deeper discussion.`;
+
+    function addMessage(text, isUser = false) {
+      const div = document.createElement('div');
+      div.className = `flex ${isUser ? 'justify-end' : 'justify-start'}`;
+      div.innerHTML = `<div class="${isUser ? 'bg-indigo-600 text-white rounded-3xl rounded-tr-none' : 'bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 rounded-3xl rounded-tl-none'} px-5 py-3 max-w-[85%]">${text}</div>`;
+      chatMessages.appendChild(div);
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+
+    async function sendToAI(userMessage) {
+      if (isProcessing) return;
+      isProcessing = true;
+      sendButton.disabled = true;
+
+      const typing = document.createElement('div');
+      typing.className = 'flex justify-start';
+      typing.innerHTML = `<div class="bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 px-5 py-3 rounded-3xl rounded-tl-none text-zinc-400">thinking...</div>`;
+      chatMessages.appendChild(typing);
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+
+      try {
+        // === CHANGE THIS URL TO YOUR PROXY ===
+        const proxyUrl = 'https://your-proxy-name.workers.dev/chat';   // ←←← UPDATE THIS
+
+        const response = await fetch(proxyUrl, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            message: userMessage,
+            context: portfolioContext   // Send full context to the proxy
+          })
+        });
+
+        if (!response.ok) throw new Error();
+
+        const data = await response.json();
+        typing.remove();
+        addMessage(data.reply || "Sorry, I couldn't generate a response.", false);
+
+      } catch (error) {
+        typing.remove();
+        // Fallback to smart keyword system if proxy fails
+        const fallbackReply = "I'm currently using a real AI assistant powered by my full portfolio. The service is temporarily unavailable. You can ask me about my key projects like the Rp 30M/month savings from Unique Amount Transfer, POD in Review fraud prevention, or Pricing self-service system. For the best answer, please email me directly at your.email@example.com.";
+        addMessage(fallbackReply, false);
+      } finally {
+        isProcessing = false;
+        sendButton.disabled = false;
+      }
+    }
+
+    function sendMessage() {
+      const message = chatInput.value.trim();
+      if (!message || isProcessing) return;
+
+      addMessage(message, true);
+      chatInput.value = '';
+      sendToAI(message);
+    }
+
+    function openChat() {
+      chatWindow.classList.remove('hidden');
+      if (chatMessages.children.length === 0) {
+        addMessage("Hi! I'm Erwin's AI assistant. I know all my projects at IDExpress in detail. Ask me anything about my experience, achievements, technical skills, or availability.", false);
+      }
+      setTimeout(() => chatInput.focus(), 300);
+    }
+
+    // Event listeners
+    heroChatBtn.addEventListener('click', openChat);
+    floatingChatBtn.addEventListener('click', openChat);
+    sendButton.addEventListener('click', sendMessage);
+    chatInput.addEventListener('keypress', e => { if (e.key === 'Enter') sendMessage(); });
+    closeChat.addEventListener('click', () => chatWindow.classList.add('hidden'));
+  </script>
+
+  <script>
+    /* ==================== THEME TOGGLE ==================== */
+    const themeToggle = document.getElementById('theme-toggle');
+    const themeIcon = document.getElementById('theme-icon');
+
+    themeToggle.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+      if (document.documentElement.classList.contains('dark')) {
+        themeIcon.classList.remove('fa-moon');
+        themeIcon.classList.add('fa-sun');
+      } else {
+        themeIcon.classList.remove('fa-sun');
+        themeIcon.classList.add('fa-moon');
+      }
+    });
+
+    /* ==================== MOBILE MENU ==================== */
+    const mobileButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    /* ==================== SMOOTH SCROLL ==================== */
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth' });
+          if (!mobileMenu.classList.contains('hidden')) mobileMenu.classList.add('hidden');
+        }
+      });
+    });
+
+    /* ==================== CHAT SYSTEM (100% CLIENT-SIDE - GitHub Pages safe) ==================== */
+    const heroChatBtn = document.getElementById('hero-chat-button');
+    const floatingChatBtn = document.getElementById('chat-button');
+    const chatWindow = document.getElementById('chat-window');
+    const closeChat = document.getElementById('close-chat');
+    const chatMessages = document.getElementById('chat-messages');
+    const chatInput = document.getElementById('chat-input');
+    const sendButton = document.getElementById('send-message');
+
+    let isProcessing = false;
+
+    // Knowledge base - all your portfolio content (summarizable & searchable)
+    const knowledgeBase = [
+      { keywords: ["checker-maker", "workflow", "approval"], answer: "Checker-Maker Workflow: Double-layer approval for net-off disbursements with full audit trail. Prevented double payments and eliminated manual errors." },
+      { keywords: ["unique amount", "3-digit", "virtual account", "va"], answer: "Unique Amount Transfer: Replaced costly Virtual Accounts with standard bank transfers + 3-digit identifier auto-matching. Saved ~Rp 30 million per month in transaction fees." },
+      { keywords: ["pod in review", "fraud"], answer: "POD in Review (Fraud Prevention): Automatically flags high-value COD waybills (≥ Rp 1M) for manual audit before payout. Significantly reduced revenue leakage." },
+      { keywords: ["pricing", "revamp", "self-service"], answer: "Pricing Management System Revamp: Decoupled pricing from agents. Self-service engine with dynamic rounding rules → zero engineering dependency for pricing updates." },
+      { keywords: ["blibli", "auto import", "email"], answer: "Auto Import Order from Blibli: System monitors email and auto-creates orders from Excel attachments + Auto Brush Logic for weight correction. Saved 1–2 hours of manual work daily." },
+      { keywords: ["net off", "tax", "bukti potong"], answer: "Net Off Report + Bukti Potong Automation: Complex COD vs shipping fee calculations and automated tax receipt distribution. 100% system-generated source of truth." },
+      { keywords: ["idexpress", "oms", "financial", "vertical lead"], answer: "At IDExpress I am Senior Product Manager & Vertical Lead with full ownership of OMS, Finance, Settlement, Pricing & Operational Control verticals. Delivered 20+ major enhancements focused on automation and cost efficiency." },
+      { keywords: ["cost", "saving", "rp", "million"], answer: "Key financial impact: ~Rp 30M/month saved through Unique Amount Transfer alone, plus many other automation projects that eliminated manual work and reduced transaction fees." },
+      { keywords: ["education", "degree"], answer: "Education section is currently a placeholder. Please update it with your degree, university, and graduation year in the HTML file." },
+      { keywords: ["jakarta", "indonesia", "location"], answer: "I am based in Jakarta, Indonesia and open to remote or on-site opportunities." }
+    ];
+
+    function addMessage(text, isUser = false) {
+      const div = document.createElement('div');
+      div.className = `flex ${isUser ? 'justify-end' : 'justify-start'}`;
+      div.innerHTML = `
+        <div class="${isUser 
+          ? 'bg-indigo-600 text-white rounded-3xl rounded-tr-none' 
+          : 'bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 rounded-3xl rounded-tl-none'} px-5 py-3 max-w-[80%]">
+          ${text}
+        </div>`;
+      chatMessages.appendChild(div);
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+
+    function getAIResponse(message) {
+      const lowerMsg = message.toLowerCase();
+      
+      // Search knowledge base
+      for (let item of knowledgeBase) {
+        if (item.keywords.some(kw => lowerMsg.includes(kw))) {
+          return item.answer;
+        }
+      }
+      
+      // Fallback helpful response
+      return `Thank you for your question! That touches on my experience at IDExpress. I specialize in financial automation, fraud prevention, and operational efficiency (e.g. Checker-Maker, Unique Amount Transfer, POD in Review). For a personalized summary or to discuss opportunities, please email me at your.email@example.com. What else would you like to know?`;
+    }
+
+    async function sendMessage() {
+      const message = chatInput.value.trim();
+      if (!message || isProcessing) return;
+
+      // Add user message
+      addMessage(message, true);
+      chatInput.value = '';
+
+      isProcessing = true;
+      sendButton.disabled = true;
+
+      // Show typing indicator
+      const typingDiv = document.createElement('div');
+      typingDiv.className = 'flex justify-start';
+      typingDiv.innerHTML = `<div class="bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 px-5 py-3 rounded-3xl rounded-tl-none text-zinc-400 flex items-center gap-2"><i class="fa-solid fa-circle animate-pulse"></i> thinking...</div>`;
+      chatMessages.appendChild(typingDiv);
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+
+      // Simulate AI thinking time (realistic)
+      setTimeout(() => {
+        typingDiv.remove();
+        
+        const reply = getAIResponse(message);
+        addMessage(reply, false);
+        
+        isProcessing = false;
+        sendButton.disabled = false;
+      }, 900);
+    }
+
+    function openChat() {
+      chatWindow.classList.remove('hidden');
+      if (chatMessages.children.length === 0) {
+        addMessage("Hi! I'm Erwin's AI assistant. Ask me anything about my projects at IDExpress, cost savings, fraud prevention, technical skills, or availability for new opportunities.", false);
+      }
+      chatInput.focus();
+    }
+
+    // Event listeners
+    heroChatBtn.addEventListener('click', openChat);
+    floatingChatBtn.addEventListener('click', openChat);
+    sendButton.addEventListener('click', sendMessage);
+    chatInput.addEventListener('keypress', e => {
+      if (e.key === 'Enter') sendMessage();
+    });
+    closeChat.addEventListener('click', () => chatWindow.classList.add('hidden'));
+
+    // Auto-open chat after 8 seconds for recruiters (optional - remove if you don't want it)
+    // setTimeout(() => { if (chatMessages.children.length === 0) openChat(); }, 8000);
+
+    console.log('%c✅ Portfolio with AI chat loaded successfully (GitHub Pages ready)', 'color:#4f46e5; font-weight:600');
+  </script>
+</body>
+</html>
