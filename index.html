@@ -26,7 +26,7 @@
       transition: all 0.3s ease; 
     }
     .hero-bg {
-      background: linear-gradient(135deg, #0f172a 0%, #1e2937 100%);
+      background: linear-gradient(135deg, #1a120b 0%, #2c1e12 60%, #3a2a1f 100%);
     }
     .section-header {
       position: relative;
@@ -36,7 +36,7 @@
       position: absolute;
       width: 64px;
       height: 3px;
-      background: #4f46e5;
+      background: #ff6b00;
       bottom: -6px;
       left: 0;
     }
@@ -59,20 +59,17 @@
   <nav class="sticky top-0 bg-white/95 dark:bg-zinc-950/95 backdrop-blur-md border-b border-zinc-200 dark:border-zinc-800 z-50">
     <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
       <a href="#" class="text-2xl font-semibold tracking-tight flex items-center gap-2">
-        <span class="text-indigo-600">Home</span>
+        <span class="text-orange-500">Home</span>
       </a>
       
       <div class="hidden md:flex items-center gap-8 text-sm font-medium">
-        <a href="#about" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">About</a>
-        <a href="#projects" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Work</a>
-        <a href="#experience" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Experience</a>
-        <a href="#connect" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Connect</a>
+        <a href="#about" class="hover:text-orange-500 dark:hover:text-orange-400 transition-colors">About</a>
+        <a href="#projects" class="hover:text-orange-500 dark:hover:text-orange-400 transition-colors">Work</a>
+        <a href="#experience" class="hover:text-orange-500 dark:hover:text-orange-400 transition-colors">Experience</a>
+        <a href="#connect" class="hover:text-orange-500 dark:hover:text-orange-400 transition-colors">Connect</a>
       </div>
 
       <div class="flex items-center gap-4">
-        <button id="theme-toggle" class="p-2 rounded-xl hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors">
-          <i id="theme-icon" class="fa-solid fa-moon text-xl"></i>
-        </button>
         <button id="mobile-menu-button" class="md:hidden p-2 rounded-xl hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors">
           <i class="fa-solid fa-bars text-xl"></i>
         </button>
@@ -82,10 +79,10 @@
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-zinc-900 border-t border-zinc-200 dark:border-zinc-800">
       <div class="px-6 py-6 flex flex-col gap-4 text-sm font-medium">
-        <a href="#about" class="hover:text-indigo-600 dark:hover:text-indigo-400 py-2">About</a>
-        <a href="#projects" class="hover:text-indigo-600 dark:hover:text-indigo-400 py-2">Work</a>
-        <a href="#experience" class="hover:text-indigo-600 dark:hover:text-indigo-400 py-2">Experience</a>
-        <a href="#connect" class="hover:text-indigo-600 dark:hover:text-indigo-400 py-2">Connect</a>
+        <a href="#about" class="hover:text-orange-500 dark:hover:text-orange-400 py-2">About</a>
+        <a href="#projects" class="hover:text-orange-500 dark:hover:text-orange-400 py-2">Work</a>
+        <a href="#experience" class="hover:text-orange-500 dark:hover:text-orange-400 py-2">Experience</a>
+        <a href="#connect" class="hover:text-orange-500 dark:hover:text-orange-400 py-2">Connect</a>
       </div>
     </div>
   </nav>
@@ -96,7 +93,7 @@
       <div class="flex flex-col md:flex-row items-center gap-12">
         <div class="flex-1">
           <h1 class="text-5xl md:text-6xl font-semibold tracking-tighter leading-none">Hi, I'm Erwin</h1>
-          <p class="text-3xl mt-3 text-indigo-300">Senior Product Manager &amp; Vertical Lead | <br>Logistic Core &amp; Financial Systems</p>
+          <p class="text-3xl mt-3 text-orange-300">Senior Product Manager &amp; Vertical Lead | <br>Logistic Core &amp; Financial Systems</p>
           <p class="mt-6 text-lg max-w-lg text-slate-300">
             Bridging complex technical logic with business operations in logistics and fintech. 
             I own the full core logistic (OMS) system, Finance &amp; Settlement roadmap, driving automation, cost optimization, and operational integrity at IDExpress.
@@ -147,7 +144,7 @@
       <div class="md:col-span-5 space-y-6">
         <div class="bg-white dark:bg-zinc-900 rounded-3xl p-6 border border-zinc-100 dark:border-zinc-800 project-card">
           <div class="flex items-center gap-3 mb-4">
-            <i class="fa-solid fa-briefcase text-indigo-600 text-2xl"></i>
+            <i class="fa-solid fa-briefcase text-orange-500 text-2xl"></i>
             <h3 class="font-semibold text-xl">Product Leadership</h3>
           </div>
           <p class="text-zinc-600 dark:text-zinc-400">Vertical ownership of Order Management System (OMS) and Financial Systems. Define roadmap strategy, financial governance, cost optimization, and deliver high-impact automation.</p>
@@ -155,7 +152,7 @@
         
         <div class="bg-white dark:bg-zinc-900 rounded-3xl p-6 border border-zinc-100 dark:border-zinc-800 project-card">
           <div class="flex items-center gap-3 mb-4">
-            <i class="fa-solid fa-cogs text-indigo-600 text-2xl"></i>
+            <i class="fa-solid fa-cogs text-orange-500 text-2xl"></i>
             <h3 class="font-semibold text-xl">Technical Depth</h3>
           </div>
           <p class="text-zinc-600 dark:text-zinc-400">Backend logic design, REST/SOAP APIs, data mapping, SQL, ETL processes. Tools: JIRA, Confluence, Postman, Figma, Java Spring, MySQL/PostgreSQL, Jedox EPM.</p>
@@ -163,7 +160,7 @@
         
         <div class="bg-white dark:bg-zinc-900 rounded-3xl p-6 border border-zinc-100 dark:border-zinc-800 project-card">
           <div class="flex items-center gap-3 mb-4">
-            <i class="fa-solid fa-shield-alt text-indigo-600 text-2xl"></i>
+            <i class="fa-solid fa-shield-alt text-orange-500 text-2xl"></i>
             <h3 class="font-semibold text-xl">Operational Integrity</h3>
           </div>
           <p class="text-zinc-600 dark:text-zinc-400">Fraud prevention (POD in Review), Checker-Maker governance workflows, self-service tools that eliminate manual work and reduce operational risk.</p>
@@ -182,6 +179,22 @@
     </div>
   </div>
 
+  <style>
+    .project-items-extra { display: none; }
+    .project-items-extra.expanded { display: contents; }
+    .project-items-extra-grid { display: none; }
+    .project-items-extra-grid.expanded { display: grid; }
+    .expand-btn {
+      transition: all 0.2s ease;
+    }
+    .expand-btn .btn-icon {
+      transition: transform 0.3s ease;
+    }
+    .expand-btn.open .btn-icon {
+      transform: rotate(180deg);
+    }
+  </style>
+
   <div class="grid md:grid-cols-2 gap-8">
 
     <!-- Financial & Disbursement Automation -->
@@ -191,21 +204,18 @@
         Financial & Disbursement Automation
       </h3>
       
-      <div class="space-y-6">
+      <div class="space-y-6" id="group-finance-inner">
+        <!-- VISIBLE: 3 items -->
         <div class="bg-zinc-950 border border-zinc-700 rounded-2xl p-6">
           <strong class="block text-base mb-4 text-white">Checker-Maker Workflow</strong>
           <div class="space-y-4">
             <div>
               <span class="inline-block px-3 py-1 bg-orange-950 text-orange-400 text-xs font-semibold rounded-lg mb-2">Problem Statement</span>
-              <p class="text-zinc-400 text-sm leading-relaxed">
-                High risk of double payments, manual reconciliation errors, and lack of proper audit trail in net-off disbursements.
-              </p>
+              <p class="text-zinc-400 text-sm leading-relaxed">High risk of double payments, manual reconciliation errors, and lack of proper audit trail in net-off disbursements.</p>
             </div>
             <div>
               <span class="inline-block px-3 py-1 bg-emerald-950 text-emerald-400 text-xs font-semibold rounded-lg mb-2">Solution & Impact</span>
-              <p class="text-zinc-400 text-sm leading-relaxed">
-                Implemented double-layer approval (Maker/Checker) with full audit trail. Prevented double payments and completely eliminated manual errors.
-              </p>
+              <p class="text-zinc-400 text-sm leading-relaxed">Implemented double-layer approval (Maker/Checker) with full audit trail. Prevented double payments and completely eliminated manual errors.</p>
             </div>
           </div>
         </div>
@@ -215,57 +225,52 @@
           <div class="space-y-4">
             <div>
               <span class="inline-block px-3 py-1 bg-orange-950 text-orange-400 text-xs font-semibold rounded-lg mb-2">Problem Statement</span>
-              <p class="text-zinc-400 text-sm leading-relaxed">
-                High transaction fees from Virtual Accounts and frequent matching failures during reconciliation.
-              </p>
+              <p class="text-zinc-400 text-sm leading-relaxed">High transaction fees from Virtual Accounts and frequent matching failures during reconciliation.</p>
             </div>
             <div>
               <span class="inline-block px-3 py-1 bg-emerald-950 text-emerald-400 text-xs font-semibold rounded-lg mb-2">Solution & Impact</span>
-              <p class="text-zinc-400 text-sm leading-relaxed">
-                Replaced expensive Virtual Accounts with standard bank transfers using auto-incremented 3-digit identifier for automatic matching. 
-                <span class="font-semibold text-emerald-500">Saved ~Rp 30M per month</span>.
-              </p>
+              <p class="text-zinc-400 text-sm leading-relaxed">Replaced expensive Virtual Accounts with standard bank transfers using auto-incremented 3-digit identifier for automatic matching. <span class="font-semibold text-emerald-500">Saved ~Rp 30M per month</span>.</p>
             </div>
           </div>
         </div>
 
-        <div class="bg-zinc-950 border border-zinc-700 rounded-2xl p-6">
-          <strong class="block text-base mb-4 text-white">Net Off Report + Bukti Potong (Tax) Automation</strong>
-          <div class="space-y-4">
-            <div>
-              <span class="inline-block px-3 py-1 bg-orange-950 text-orange-400 text-xs font-semibold rounded-lg mb-2">Problem Statement</span>
-              <p class="text-zinc-400 text-sm leading-relaxed">
-                Finance team spent excessive time on complex manual calculations and preparing tax withholding receipts.
-              </p>
-            </div>
-            <div>
-              <span class="inline-block px-3 py-1 bg-emerald-950 text-emerald-400 text-xs font-semibold rounded-lg mb-2">Solution & Impact</span>
-              <p class="text-zinc-400 text-sm leading-relaxed">
-                Fully automated complex COD vs shipping fee calculations and daily automated tax receipt distribution. 
-                Created 100% system-generated single source of truth.
-              </p>
+        <!-- HIDDEN: extra items -->
+        <div class="project-items-extra" id="finance-extra">
+          
+          <div class="bg-zinc-950 border border-zinc-700 rounded-2xl p-6">
+            <strong class="block text-base mb-4 text-white">Net Off Report + Bukti Potong (Tax) Automation</strong>
+            <div class="space-y-4">
+              <div>
+                <span class="inline-block px-3 py-1 bg-orange-950 text-orange-400 text-xs font-semibold rounded-lg mb-2">Problem Statement</span>
+                <p class="text-zinc-400 text-sm leading-relaxed">Finance team spent excessive time on complex manual calculations and preparing tax withholding receipts.</p>
+              </div>
+              <div>
+                <span class="inline-block px-3 py-1 bg-emerald-950 text-emerald-400 text-xs font-semibold rounded-lg mb-2">Solution & Impact</span>
+                <p class="text-zinc-400 text-sm leading-relaxed">Fully automated complex COD vs shipping fee calculations and daily automated tax receipt distribution. Created 100% system-generated single source of truth.</p>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="bg-zinc-950 border border-zinc-700 rounded-2xl p-6">
-          <strong class="block text-base mb-4 text-white">Automated COD Payouts & VA Status Scheduler</strong>
-          <div class="space-y-4">
-            <div>
-              <span class="inline-block px-3 py-1 bg-orange-950 text-orange-400 text-xs font-semibold rounded-lg mb-2">Problem Statement</span>
-              <p class="text-zinc-400 text-sm leading-relaxed">
-                Slow and error-prone manual bank transfers to sellers plus missed Virtual Account status updates.
-              </p>
-            </div>
-            <div>
-              <span class="inline-block px-3 py-1 bg-emerald-950 text-emerald-400 text-xs font-semibold rounded-lg mb-2">Solution & Impact</span>
-              <p class="text-zinc-400 text-sm leading-relaxed">
-                Daily automated payouts combined with scheduled VA status reconciliation.
-              </p>
+          <div class="bg-zinc-950 border border-zinc-700 rounded-2xl p-6">
+            <strong class="block text-base mb-4 text-white">Automated COD Payouts & VA Status Scheduler</strong>
+            <div class="space-y-4">
+              <div>
+                <span class="inline-block px-3 py-1 bg-orange-950 text-orange-400 text-xs font-semibold rounded-lg mb-2">Problem Statement</span>
+                <p class="text-zinc-400 text-sm leading-relaxed">Slow and error-prone manual bank transfers to sellers plus missed Virtual Account status updates.</p>
+              </div>
+              <div>
+                <span class="inline-block px-3 py-1 bg-emerald-950 text-emerald-400 text-xs font-semibold rounded-lg mb-2">Solution & Impact</span>
+                <p class="text-zinc-400 text-sm leading-relaxed">Daily automated payouts combined with scheduled VA status reconciliation.</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
+      <button class="expand-btn mt-6 w-full flex items-center justify-center gap-2 py-3 rounded-2xl border border-zinc-700 text-zinc-400 hover:text-white hover:border-zinc-500 text-sm font-medium transition-colors" data-target="finance-extra">
+        <span class="btn-label">Show more</span>
+        <i class="fa-solid fa-chevron-down btn-icon text-xs"></i>
+      </button>
     </div>
 
     <!-- Logistics & Pricing Engine -->
@@ -276,20 +281,17 @@
       </h3>
       
       <div class="space-y-6">
+        <!-- VISIBLE: 3 items -->
         <div class="bg-zinc-950 border border-zinc-700 rounded-2xl p-6">
           <strong class="block text-base mb-4 text-white">Pricing Management System Revamp</strong>
           <div class="space-y-4">
             <div>
               <span class="inline-block px-3 py-1 bg-orange-950 text-orange-400 text-xs font-semibold rounded-lg mb-2">Problem Statement</span>
-              <p class="text-zinc-400 text-sm leading-relaxed">
-                Pricing logic was rigid, agent-dependent, and every change required technical deployment.
-              </p>
+              <p class="text-zinc-400 text-sm leading-relaxed">Pricing logic was rigid, agent-dependent, and every change required technical deployment.</p>
             </div>
             <div>
               <span class="inline-block px-3 py-1 bg-emerald-950 text-emerald-400 text-xs font-semibold rounded-lg mb-2">Solution & Impact</span>
-              <p class="text-zinc-400 text-sm leading-relaxed">
-                Built self-service pricing engine with dynamic rounding rules. Zero dependency on engineering team for updates.
-              </p>
+              <p class="text-zinc-400 text-sm leading-relaxed">Built self-service pricing engine with dynamic rounding rules. Zero dependency on engineering team for updates.</p>
             </div>
           </div>
         </div>
@@ -299,55 +301,51 @@
           <div class="space-y-4">
             <div>
               <span class="inline-block px-3 py-1 bg-orange-950 text-orange-400 text-xs font-semibold rounded-lg mb-2">Problem Statement</span>
-              <p class="text-zinc-400 text-sm leading-relaxed">
-                CX team had to manually assign pickup orders, leading to inefficiency and delays.
-              </p>
+              <p class="text-zinc-400 text-sm leading-relaxed">CX team had to manually assign pickup orders, leading to inefficiency and delays.</p>
             </div>
             <div>
               <span class="inline-block px-3 py-1 bg-emerald-950 text-emerald-400 text-xs font-semibold rounded-lg mb-2">Solution & Impact</span>
-              <p class="text-zinc-400 text-sm leading-relaxed">
-                Latitude/Longitude based automatic branch matching within 25km radius.
-              </p>
+              <p class="text-zinc-400 text-sm leading-relaxed">Latitude/Longitude based automatic branch matching within 25km radius.</p>
             </div>
           </div>
         </div>
 
-        <div class="bg-zinc-950 border border-zinc-700 rounded-2xl p-6">
-          <strong class="block text-base mb-4 text-white">Auto Import Order (Blibli) + Auto Brush Logic</strong>
-          <div class="space-y-4">
-            <div>
-              <span class="inline-block px-3 py-1 bg-orange-950 text-orange-400 text-xs font-semibold rounded-lg mb-2">Problem Statement</span>
-              <p class="text-zinc-400 text-sm leading-relaxed">
-                1–2 hours daily manual order entry from email attachments and incorrect express type/fee assignment for packages under 0.509kg.
-              </p>
-            </div>
-            <div>
-              <span class="inline-block px-3 py-1 bg-emerald-950 text-emerald-400 text-xs font-semibold rounded-lg mb-2">Solution & Impact</span>
-              <p class="text-zinc-400 text-sm leading-relaxed">
-                Automated email monitoring + weight-based auto correction. Saved 1–2 hours of manual work daily.
-              </p>
+        <!-- HIDDEN: extra items -->
+        <div class="project-items-extra" id="logistics-extra">
+          <div class="bg-zinc-950 border border-zinc-700 rounded-2xl p-6">
+            <strong class="block text-base mb-4 text-white">Auto Import Order (Blibli) + Auto Brush Logic</strong>
+            <div class="space-y-4">
+              <div>
+                <span class="inline-block px-3 py-1 bg-orange-950 text-orange-400 text-xs font-semibold rounded-lg mb-2">Problem Statement</span>
+                <p class="text-zinc-400 text-sm leading-relaxed">1–2 hours daily manual order entry from email attachments and incorrect express type/fee assignment for packages under 0.509kg.</p>
+              </div>
+              <div>
+                <span class="inline-block px-3 py-1 bg-emerald-950 text-emerald-400 text-xs font-semibold rounded-lg mb-2">Solution & Impact</span>
+                <p class="text-zinc-400 text-sm leading-relaxed">Automated email monitoring + weight-based auto correction. Saved 1–2 hours of manual work daily.</p>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="bg-zinc-950 border border-zinc-700 rounded-2xl p-6">
-          <strong class="block text-base mb-4 text-white">Retail PAD Model & Fallback Pricing</strong>
-          <div class="space-y-4">
-            <div>
-              <span class="inline-block px-3 py-1 bg-orange-950 text-orange-400 text-xs font-semibold rounded-lg mb-2">Problem Statement</span>
-              <p class="text-zinc-400 text-sm leading-relaxed">
-                Lost retail volume due to lack of flexible payment options and frequent order rejections.
-              </p>
-            </div>
-            <div>
-              <span class="inline-block px-3 py-1 bg-emerald-950 text-emerald-400 text-xs font-semibold rounded-lg mb-2">Solution & Impact</span>
-              <p class="text-zinc-400 text-sm leading-relaxed">
-                Post-delivery payment model with automatic fallback to standard pricing when preferred express type is unavailable.
-              </p>
+          <div class="bg-zinc-950 border border-zinc-700 rounded-2xl p-6">
+            <strong class="block text-base mb-4 text-white">Retail PAD Model & Fallback Pricing</strong>
+            <div class="space-y-4">
+              <div>
+                <span class="inline-block px-3 py-1 bg-orange-950 text-orange-400 text-xs font-semibold rounded-lg mb-2">Problem Statement</span>
+                <p class="text-zinc-400 text-sm leading-relaxed">Lost retail volume due to lack of flexible payment options and frequent order rejections.</p>
+              </div>
+              <div>
+                <span class="inline-block px-3 py-1 bg-emerald-950 text-emerald-400 text-xs font-semibold rounded-lg mb-2">Solution & Impact</span>
+                <p class="text-zinc-400 text-sm leading-relaxed">Post-delivery payment model with automatic fallback to standard pricing when preferred express type is unavailable.</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
+      <button class="expand-btn mt-6 w-full flex items-center justify-center gap-2 py-3 rounded-2xl border border-zinc-700 text-zinc-400 hover:text-white hover:border-zinc-500 text-sm font-medium transition-colors" data-target="logistics-extra">
+        <span class="btn-label">Show more</span>
+        <i class="fa-solid fa-chevron-down btn-icon text-xs"></i>
+      </button>
     </div>
 
     <!-- Operational Integrity & Control -->
@@ -357,6 +355,7 @@
         Operational Integrity & Control
       </h3>
       
+      <!-- VISIBLE: 3 items -->
       <div class="grid md:grid-cols-3 gap-6">
         <div class="bg-zinc-950 border border-zinc-700 rounded-2xl p-6">
           <strong class="block text-base mb-4 text-white">POD in Review (Fraud Prevention)</strong>
@@ -399,7 +398,10 @@
             </div>
           </div>
         </div>
+      </div>
 
+      <!-- HIDDEN: extra 3 items -->
+      <div class="project-items-extra-grid grid md:grid-cols-3 gap-6 mt-6" id="integrity-extra">
         <div class="bg-zinc-950 border border-zinc-700 rounded-2xl p-6">
           <strong class="block text-base mb-4 text-white">Automated Account Deactivation</strong>
           <div class="space-y-4">
@@ -442,6 +444,11 @@
           </div>
         </div>
       </div>
+
+      <button class="expand-btn mt-6 w-full flex items-center justify-center gap-2 py-3 rounded-2xl border border-zinc-700 text-zinc-400 hover:text-white hover:border-zinc-500 text-sm font-medium transition-colors" data-target="integrity-extra">
+        <span class="btn-label">Show more</span>
+        <i class="fa-solid fa-chevron-down btn-icon text-xs"></i>
+      </button>
     </div>
 
   </div>
@@ -529,7 +536,7 @@
 
       <div class="flex flex-col sm:flex-row justify-center gap-6">
         <a href="mailto:your.email@example.com" 
-           class="group flex-1 flex items-center justify-center gap-4 bg-white dark:bg-zinc-900 border border-zinc-300 dark:border-zinc-700 hover:border-indigo-600 px-8 py-6 rounded-3xl transition-all">
+           class="group flex-1 flex items-center justify-center gap-4 bg-white dark:bg-zinc-900 border border-zinc-300 dark:border-zinc-700 hover:border-orange-500 px-8 py-6 rounded-3xl transition-all">
           <div class="w-12 h-12 bg-zinc-100 dark:bg-zinc-800 rounded-2xl flex items-center justify-center text-2xl group-hover:scale-110 transition">✉️</div>
           <div class="text-left">
             <p class="font-medium text-lg">Send me an email</p>
@@ -538,7 +545,7 @@
         </a>
 
         <a href="https://linkedin.com/in/yourprofile" target="_blank"
-           class="group flex-1 flex items-center justify-center gap-4 bg-white dark:bg-zinc-900 border border-zinc-300 dark:border-zinc-700 hover:border-indigo-600 px-8 py-6 rounded-3xl transition-all">
+           class="group flex-1 flex items-center justify-center gap-4 bg-white dark:bg-zinc-900 border border-zinc-300 dark:border-zinc-700 hover:border-orange-500 px-8 py-6 rounded-3xl transition-all">
           <div class="w-12 h-12 bg-zinc-100 dark:bg-zinc-800 rounded-2xl flex items-center justify-center text-2xl group-hover:scale-110 transition">
             <i class="fa-brands fa-linkedin"></i>
           </div>
@@ -561,7 +568,7 @@
 
 <!-- Floating Chat Button -->
   <button id="chat-button" 
-          class="fixed bottom-8 right-8 w-14 h-14 bg-indigo-600 hover:bg-indigo-700 text-white rounded-2xl shadow-2xl flex items-center justify-center text-3xl chat-bubble z-50">
+          class="fixed bottom-8 right-8 w-14 h-14 bg-orange-500 hover:bg-orange-600 text-white rounded-2xl shadow-2xl flex items-center justify-center text-3xl chat-bubble z-50">
     <i class="fa-solid fa-comment-dots"></i>
   </button>
 
@@ -569,7 +576,7 @@
   <div id="chat-window" class="hidden fixed bottom-28 right-8 w-96 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-700 rounded-3xl shadow-2xl overflow-hidden z-50 flex flex-col" style="height: 520px;">
     <div class="bg-zinc-900 text-white px-6 py-4 flex items-center justify-between rounded-t-3xl">
       <div class="flex items-center gap-3">
-        <div class="w-8 h-8 bg-indigo-500 rounded-2xl flex items-center justify-center text-sm font-semibold">E</div>
+        <div class="w-8 h-8 bg-orange-500 rounded-2xl flex items-center justify-center text-sm font-semibold">E</div>
         <div>
           <p class="font-medium text-sm">Chat with Erwin</p>
           <p class="text-xs text-zinc-400">Powered by AI • Knows my full experience</p>
@@ -583,39 +590,81 @@
     <div class="p-4 border-t border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900">
       <div class="flex gap-2">
         <input id="chat-input" type="text" placeholder="Ask about my projects, cost savings, or availability..." 
-               class="flex-1 px-5 py-3 bg-zinc-100 dark:bg-zinc-800 border border-transparent focus:border-indigo-500 rounded-2xl text-sm focus:outline-none">
-        <button id="send-message" class="px-6 bg-indigo-600 hover:bg-indigo-700 text-white rounded-2xl font-medium">Send</button>
+               class="flex-1 px-5 py-3 bg-zinc-100 dark:bg-zinc-800 border border-transparent focus:border-orange-500 rounded-2xl text-sm focus:outline-none">
+        <button id="send-message" class="px-6 bg-orange-500 hover:bg-orange-600 text-white rounded-2xl font-medium">Send</button>
       </div>
       <p class="text-[10px] text-center text-zinc-400 mt-2">Ask about my portofolio</p>
     </div>
   </div>
 
   <script>
-    // === Tailwind + Theme + Mobile Menu + Smooth Scroll (same as before) ===
+    /* ==================== TAILWIND CONFIG ==================== */
     tailwind.config = { darkMode: 'class' };
 
-    const themeToggle = document.getElementById('theme-toggle');
-    const themeIcon = document.getElementById('theme-icon');
-    themeToggle.addEventListener('click', () => {
-      document.documentElement.classList.toggle('dark');
-      themeIcon.classList.toggle('fa-moon');
-      themeIcon.classList.toggle('fa-sun');
+    /* ==================== MOBILE MENU ==================== */
+    const mobileButton = document.getElementById('mobile-menu-button');
+    const mobileMenu   = document.getElementById('mobile-menu');
+    mobileButton.addEventListener('click', (e) => {
+      e.stopPropagation();
+      mobileMenu.classList.toggle('hidden');
+    });
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!mobileMenu.classList.contains('hidden') &&
+          !mobileMenu.contains(e.target) &&
+          !mobileButton.contains(e.target)) {
+        mobileMenu.classList.add('hidden');
+      }
     });
 
-    // Mobile menu, smooth scroll... (copy from previous version)
+    /* ==================== SMOOTH SCROLL ==================== */
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth' });
+          mobileMenu.classList.add('hidden');
+        }
+      });
+    });
 
-    // ==================== CHAT SYSTEM - REAL AI READY ====================
-    const chatMessages = document.getElementById('chat-messages');
-    const chatInput = document.getElementById('chat-input');
-    const sendButton = document.getElementById('send-message');
-    const heroChatBtn = document.getElementById('hero-chat-button');
+    /* ==================== COLLAPSIBLE PROJECT GROUPS ==================== */
+    document.querySelectorAll('.expand-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const targetId = btn.getAttribute('data-target');
+        const target   = document.getElementById(targetId);
+        const label    = btn.querySelector('.btn-label');
+        const isGrid   = target.classList.contains('project-items-extra-grid');
+
+        const isOpen = btn.classList.contains('open');
+
+        if (isOpen) {
+          // Collapse
+          target.classList.remove('expanded');
+          btn.classList.remove('open');
+          const count = target.querySelectorAll('.bg-zinc-950').length;
+          label.textContent = `Show ${count} more`;
+        } else {
+          // Expand
+          target.classList.add('expanded');
+          btn.classList.add('open');
+          label.textContent = 'Show less';
+        }
+      });
+    });
+
+    /* ==================== CHAT SYSTEM ==================== */
+    const chatMessages  = document.getElementById('chat-messages');
+    const chatInput     = document.getElementById('chat-input');
+    const sendButton    = document.getElementById('send-message');
+    const heroChatBtn   = document.getElementById('hero-chat-button');
     const floatingChatBtn = document.getElementById('chat-button');
-    const chatWindow = document.getElementById('chat-window');
-    const closeChat = document.getElementById('close-chat');
+    const chatWindow    = document.getElementById('chat-window');
+    const closeChat     = document.getElementById('close-chat');
 
     let isProcessing = false;
 
-    // Full portfolio context (the AI will use this)
     const portfolioContext = `You are Erwin, a Senior Product Manager & Vertical Lead for OMS & Financial Systems at IDExpress (logistics & fintech company in Jakarta, Indonesia).
 
 Key achievements:
@@ -629,15 +678,17 @@ Key achievements:
 - Many other automations: Scan Collection Slicing, Client Config Engine, Finance Visibility Dashboard, OMS migration, etc.
 
 Previous experience: Java Developer at Jatis Solutions, IT Consultant at Kognitif Schema & Lightstream Analytics, Intern at Blibli.com.
-
 Skills: JIRA, Confluence, Figma, Postman, SQL, Java Spring, Jedox EPM, ETL, Agile/Scrum.
 
-You are helpful, professional, and concise. Answer questions about my experience, quantify impact when possible, and encourage recruiters to email me at your.email@example.com for deeper discussion.`;
+You are helpful, professional, and concise. Answer questions about my experience, quantify impact when possible, and encourage recruiters to email me at lym.erwin@gmail.com for deeper discussion.`;
 
     function addMessage(text, isUser = false) {
       const div = document.createElement('div');
       div.className = `flex ${isUser ? 'justify-end' : 'justify-start'}`;
-      div.innerHTML = `<div class="${isUser ? 'bg-indigo-600 text-white rounded-3xl rounded-tr-none' : 'bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 rounded-3xl rounded-tl-none'} px-5 py-3 max-w-[85%]">${text}</div>`;
+      div.innerHTML = `<div class="${isUser
+        ? 'bg-orange-500 text-white rounded-3xl rounded-tr-none'
+        : 'bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 rounded-3xl rounded-tl-none'
+      } px-5 py-3 max-w-[85%]">${text}</div>`;
       chatMessages.appendChild(div);
       chatMessages.scrollTop = chatMessages.scrollHeight;
     }
@@ -654,29 +705,20 @@ You are helpful, professional, and concise. Answer questions about my experience
       chatMessages.scrollTop = chatMessages.scrollHeight;
 
       try {
-        // === CHANGE THIS URL TO YOUR PROXY ===
-        const proxyUrl = 'PROX_URL_PLACEHOLDER';
-
+        // === CHANGE THIS URL TO YOUR DEPLOYED PROXY ===
+        const proxyUrl = 'PROXY_URL_PLACEHOLDER';
         const response = await fetch(proxyUrl, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            message: userMessage,
-            context: portfolioContext   // Send full context to the proxy
-          })
+          body: JSON.stringify({ message: userMessage, context: portfolioContext })
         });
-
         if (!response.ok) throw new Error();
-
         const data = await response.json();
         typing.remove();
         addMessage(data.reply || "Sorry, I couldn't generate a response.", false);
-
-      } catch (error) {
+      } catch {
         typing.remove();
-        // Fallback to smart keyword system if proxy fails
-        const fallbackReply = "Hi! The AI assistant is currently offline. Feel free to contact me directly at lym.erwin@gmail.com for the fastest response";
-        addMessage(fallbackReply, false);
+        addMessage("The AI assistant is currently offline. Feel free to reach out directly at lym.erwin@gmail.com.", false);
       } finally {
         isProcessing = false;
         sendButton.disabled = false;
@@ -686,7 +728,6 @@ You are helpful, professional, and concise. Answer questions about my experience
     function sendMessage() {
       const message = chatInput.value.trim();
       if (!message || isProcessing) return;
-
       addMessage(message, true);
       chatInput.value = '';
       sendToAI(message);
@@ -695,69 +736,18 @@ You are helpful, professional, and concise. Answer questions about my experience
     function openChat() {
       chatWindow.classList.remove('hidden');
       if (chatMessages.children.length === 0) {
-        addMessage("Hi! I'm Erwin's AI assistant. I know all my projects at IDExpress in detail. Ask me anything about my experience, achievements, technical skills, or availability.", false);
+        addMessage("Hi! I'm Erwin's AI assistant. Ask me anything about my experience, achievements, or technical skills.", false);
       }
       setTimeout(() => chatInput.focus(), 300);
     }
 
-    // Event listeners
     heroChatBtn.addEventListener('click', openChat);
     floatingChatBtn.addEventListener('click', openChat);
     sendButton.addEventListener('click', sendMessage);
     chatInput.addEventListener('keypress', e => { if (e.key === 'Enter') sendMessage(); });
     closeChat.addEventListener('click', () => chatWindow.classList.add('hidden'));
-  </script>
 
-  <script>
-    /* ==================== THEME TOGGLE ==================== */
-    const themeToggle = document.getElementById('theme-toggle');
-    const themeIcon = document.getElementById('theme-icon');
-
-    themeToggle.addEventListener('click', () => {
-      document.documentElement.classList.toggle('dark');
-      if (document.documentElement.classList.contains('dark')) {
-        themeIcon.classList.remove('fa-moon');
-        themeIcon.classList.add('fa-sun');
-      } else {
-        themeIcon.classList.remove('fa-sun');
-        themeIcon.classList.add('fa-moon');
-      }
-    });
-
-    /* ==================== MOBILE MENU ==================== */
-    const mobileButton = document.getElementById('mobile-menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
-    mobileButton.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
-
-    /* ==================== SMOOTH SCROLL ==================== */
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          e.preventDefault();
-          target.scrollIntoView({ behavior: 'smooth' });
-          if (!mobileMenu.classList.contains('hidden')) mobileMenu.classList.add('hidden');
-        }
-      });
-    });
-
-    
-
-    // Event listeners
-    heroChatBtn.addEventListener('click', openChat);
-    floatingChatBtn.addEventListener('click', openChat);
-    sendButton.addEventListener('click', sendMessage);
-    chatInput.addEventListener('keypress', e => {
-      if (e.key === 'Enter') sendMessage();
-    });
-    closeChat.addEventListener('click', () => chatWindow.classList.add('hidden'));
-
-    // Auto-open chat after 8 seconds for recruiters (optional - remove if you don't want it)
-    // setTimeout(() => { if (chatMessages.children.length === 0) openChat(); }, 8000);
-
-    console.log('%c✅ Portfolio with AI chat loaded successfully (GitHub Pages ready)', 'color:#4f46e5; font-weight:600');
+    console.log('%c✅ Portfolio loaded', 'color:#ff6b00; font-weight:600');
   </script>
 </body>
 </html>
