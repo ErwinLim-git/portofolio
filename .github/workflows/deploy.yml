@@ -11,7 +11,8 @@ jobs:
 
       - name: Inject Proxy URL
         run: |
-          sed -i "s|PROXY_URL_PLACEHOLDER|${{ secrets.MY_PROXY_URL }}|g" index.html
+          echo "Replacing proxy URL..."
+          sed -i 's|PROXY_URL_PLACEHOLDER|'${{ secrets.MY_PROXY_URL }}'|g' index.html
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
