@@ -1,0 +1,8 @@
+# build tools
+tailwindcss-windows-x64.exe
+node_modules/
+
+# optional dev files
+input.css
+package.json
+package-lock.json

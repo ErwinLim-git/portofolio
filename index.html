@@ -6,7 +6,8 @@
   <title>Erwin | Senior Product Manager - OMS &amp; Financial Systems</title>
   
   <!-- Tailwind CDN (standard v3 with dark mode support) -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- <script src="https://cdn.tailwindcss.com"></script>  -->
+  <link href="output.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <style>
@@ -45,7 +46,7 @@
 <body class="bg-zinc-50 dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100 min-h-screen">
 
   <!-- Tailwind config script (enables dark mode + custom colors) -->
-  <script>
+  <!-- <script>
     tailwind.config = {
       darkMode: 'class',
       content: [],
@@ -53,19 +54,19 @@
         extend: {}
       }
     }
-  </script>
+  </script> -->
 
   <!-- Navbar -->
   <nav class="sticky top-0 bg-white/95 dark:bg-zinc-950/95 backdrop-blur-md border-b border-zinc-200 dark:border-zinc-800 z-50">
     <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
       <a href="#" class="text-2xl font-semibold tracking-tight flex items-center gap-2">
-        <span class="text-orange-500">Home</span>
+        <span class="text-orange-500"><i class="fa-solid fa-house"></i></span>
       </a>
       
       <div class="hidden md:flex items-center gap-8 text-sm font-medium">
         <a href="#about" class="hover:text-orange-500 dark:hover:text-orange-400 transition-colors">About</a>
         <a href="#projects" class="hover:text-orange-500 dark:hover:text-orange-400 transition-colors">Work</a>
-        <a href="#experience" class="hover:text-orange-500 dark:hover:text-orange-400 transition-colors">Experience</a>
+        <a href="#experience" class="hover:text-orange-500 dark:hover:text-orange-400 transition-colors">Previous Experience</a>
         <a href="#connect" class="hover:text-orange-500 dark:hover:text-orange-400 transition-colors">Connect</a>
       </div>
 
@@ -81,7 +82,7 @@
       <div class="px-6 py-6 flex flex-col gap-4 text-sm font-medium">
         <a href="#about" class="hover:text-orange-500 dark:hover:text-orange-400 py-2">About</a>
         <a href="#projects" class="hover:text-orange-500 dark:hover:text-orange-400 py-2">Work</a>
-        <a href="#experience" class="hover:text-orange-500 dark:hover:text-orange-400 py-2">Experience</a>
+        <a href="#experience" class="hover:text-orange-500 dark:hover:text-orange-400 py-2">Previous Experience</a>   
         <a href="#connect" class="hover:text-orange-500 dark:hover:text-orange-400 py-2">Connect</a>
       </div>
     </div>
@@ -92,7 +93,7 @@
     <div class="max-w-6xl mx-auto px-6">
       <div class="flex flex-col md:flex-row items-center gap-12">
         <div class="flex-1">
-          <h1 class="text-5xl md:text-6xl font-semibold tracking-tighter leading-none">Hi, I'm Erwin</h1>
+          <h1 class="text-5xl md:text-6xl font-semibold tracking-tighter leading-none">Hi, I'm Erwin Lim</h1>
           <p class="text-3xl mt-3 text-orange-300">Senior Product Manager &amp; Vertical Lead | <br>Logistic Core &amp; Financial Systems</p>
           <p class="mt-6 text-lg max-w-lg text-slate-300">
             Bridging complex technical logic with business operations in logistics and fintech. 
@@ -112,18 +113,10 @@
           </div>
           <p class="text-xs text-slate-400 mt-8 flex items-center gap-2">
             <i class="fa-solid fa-circle-check"></i>
-            Open to Senior Product Management roles in logistics, fintech &amp; complex operational systems
+            Open to Product Management roles in logistics, fintech &amp; complex operational systems
           </p>
-        </div>
-        
-        <!-- Professional photo (kept from your original home1.html)
-        <div class="flex-shrink-0">
-          <div class="w-72 h-72 md:w-80 md:h-80 bg-white/10 backdrop-blur-md rounded-3xl overflow-hidden border-8 border-white/30 shadow-2xl">
-            <img src="https://via.placeholder.com/400x400/334155/ffffff?text=Erwin+Photo" 
-                 alt="Erwin - Senior Product Manager" 
-                 class="w-full h-full object-cover">
-          </div>
-        </div> -->
+        </div>       
+
       </div>
     </div>
   </header>
@@ -134,20 +127,20 @@
       <div class="md:col-span-7">
         <h2 class="text-4xl font-semibold tracking-tight mb-8 section-header">About Me</h2>
         <div class="space-y-6 text-lg leading-relaxed text-zinc-700 dark:text-zinc-300">
-          <p>As Senior Product Manager &amp; Vertical Lead for OMS &amp; Financial Systems at IDExpress, I own the complete Finance, Settlement, Pricing &amp; Operational Control verticals.</p>
-          <p>I specialize in building automation that eliminates manual work, prevents fraud, reduces costs, and creates a single source of truth for financial operations.</p>
-          <p>Strong hands-on experience in backend logic, API architecture, SQL/ETL, and stakeholder alignment — turning complex requirements into scalable, measurable business impact.</p>
+          <p>As Senior Product Manager &amp; Vertical Lead for OMS &amp; Financial Systems at IDExpress, I own Finance, Settlement, Pricing &amp; Operational Control verticals.</p>
+          <p>I specialize in end-to-end system integrations that eliminate manual work, prevent fraud, reduce costs, and create a single source of truth for financial operations.</p>
+          <p>Strong hands-on experience in stakeholder alignment, SQL, and API integrations—translating complex requirements into scalable, measurable business impact; supported by prior backend </br> development experience.</p>
         </div>
       </div>
       
-      <!-- Capabilities cards (from your original home1) -->
+      <!-- Capabilities cards-->
       <div class="md:col-span-5 space-y-6">
         <div class="bg-white dark:bg-zinc-900 rounded-3xl p-6 border border-zinc-100 dark:border-zinc-800 project-card">
           <div class="flex items-center gap-3 mb-4">
             <i class="fa-solid fa-briefcase text-orange-500 text-2xl"></i>
             <h3 class="font-semibold text-xl">Product Leadership</h3>
           </div>
-          <p class="text-zinc-600 dark:text-zinc-400">Vertical ownership of Order Management System (OMS) and Financial Systems. Define roadmap strategy, financial governance, cost optimization, and deliver high-impact automation.</p>
+          <p class="text-zinc-600 dark:text-zinc-400">Own end-to-end strategy for OMS and Logistics Financial Systems, including roadmap, financial governance, cost optimization, and high-impact automation.</p>
         </div>
         
         <div class="bg-white dark:bg-zinc-900 rounded-3xl p-6 border border-zinc-100 dark:border-zinc-800 project-card">
@@ -155,7 +148,7 @@
             <i class="fa-solid fa-cogs text-orange-500 text-2xl"></i>
             <h3 class="font-semibold text-xl">Technical Depth</h3>
           </div>
-          <p class="text-zinc-600 dark:text-zinc-400">Backend logic design, REST/SOAP APIs, data mapping, SQL, ETL processes. Tools: JIRA, Confluence, Postman, Figma, Java Spring, MySQL/PostgreSQL, Jedox EPM.</p>
+          <p class="text-zinc-600 dark:text-zinc-400">Stakeholder management, roadmap ownership, requirements gathering, Scrum practices, API architecture, end-to-end integrations, SQL, and data mapping.</p>
         </div>
         
         <div class="bg-white dark:bg-zinc-900 rounded-3xl p-6 border border-zinc-100 dark:border-zinc-800 project-card">
@@ -163,7 +156,7 @@
             <i class="fa-solid fa-shield-alt text-orange-500 text-2xl"></i>
             <h3 class="font-semibold text-xl">Operational Integrity</h3>
           </div>
-          <p class="text-zinc-600 dark:text-zinc-400">Fraud prevention (POD in Review), Checker-Maker governance workflows, self-service tools that eliminate manual work and reduce operational risk.</p>
+          <p class="text-zinc-600 dark:text-zinc-400">Fraud prevention (POD in Review), checker-maker governance, and self-service tools that eliminate manual work and reduce operational risk.</p>
         </div>
       </div>
     </div>
@@ -205,7 +198,7 @@
       </h3>
       
       <div class="space-y-6" id="group-finance-inner">
-        <!-- VISIBLE: 3 items -->
+        <!-- VISIBLE: items -->
         <div class="bg-zinc-950 border border-zinc-700 rounded-2xl p-6">
           <strong class="block text-base mb-4 text-white">Checker-Maker Workflow</strong>
           <div class="space-y-4">
@@ -221,49 +214,37 @@
         </div>
 
         <div class="bg-zinc-950 border border-zinc-700 rounded-2xl p-6">
-          <strong class="block text-base mb-4 text-white">Unique Amount Transfer (3-digit identifier)</strong>
-          <div class="space-y-4">
-            <div>
-              <span class="inline-block px-3 py-1 bg-orange-950 text-orange-400 text-xs font-semibold rounded-lg mb-2">Problem Statement</span>
-              <p class="text-zinc-400 text-sm leading-relaxed">High transaction fees from Virtual Accounts and frequent matching failures during reconciliation.</p>
-            </div>
-            <div>
-              <span class="inline-block px-3 py-1 bg-emerald-950 text-emerald-400 text-xs font-semibold rounded-lg mb-2">Solution & Impact</span>
-              <p class="text-zinc-400 text-sm leading-relaxed">Replaced expensive Virtual Accounts with standard bank transfers using auto-incremented 3-digit identifier for automatic matching. <span class="font-semibold text-emerald-500">Saved ~Rp 30M per month</span>.</p>
+            <strong class="block text-base mb-4 text-white">Systemize COD Disbursement process</strong>
+            <div class="space-y-4">
+              <div>
+                <span class="inline-block px-3 py-1 bg-orange-950 text-orange-400 text-xs font-semibold rounded-lg mb-2">Problem Statement</span>
+                <p class="text-zinc-400 text-sm leading-relaxed">Finance team spent excessive time on complex manual calculations and preparing COD disbursement data to each client.</p>
+              </div>
+              <div>
+                <span class="inline-block px-3 py-1 bg-emerald-950 text-emerald-400 text-xs font-semibold rounded-lg mb-2">Solution & Impact</span>
+                <p class="text-zinc-400 text-sm leading-relaxed">Automated daily COD calculation and disbursement, cutting processing time from hours to 10 minutes and eliminating manual workload.</p>
+              </div>
             </div>
           </div>
-        </div>
+        
 
         <!-- HIDDEN: extra items -->
         <div class="project-items-extra" id="finance-extra">
           
           <div class="bg-zinc-950 border border-zinc-700 rounded-2xl p-6">
-            <strong class="block text-base mb-4 text-white">Net Off Report + Bukti Potong (Tax) Automation</strong>
-            <div class="space-y-4">
-              <div>
-                <span class="inline-block px-3 py-1 bg-orange-950 text-orange-400 text-xs font-semibold rounded-lg mb-2">Problem Statement</span>
-                <p class="text-zinc-400 text-sm leading-relaxed">Finance team spent excessive time on complex manual calculations and preparing tax withholding receipts.</p>
-              </div>
-              <div>
-                <span class="inline-block px-3 py-1 bg-emerald-950 text-emerald-400 text-xs font-semibold rounded-lg mb-2">Solution & Impact</span>
-                <p class="text-zinc-400 text-sm leading-relaxed">Fully automated complex COD vs shipping fee calculations and daily automated tax receipt distribution. Created 100% system-generated single source of truth.</p>
-              </div>
+          <strong class="block text-base mb-4 text-white">Unique Amount Transfer (3-digit identifier)</strong>
+          <div class="space-y-4">
+            <div>
+              <span class="inline-block px-3 py-1 bg-orange-950 text-orange-400 text-xs font-semibold rounded-lg mb-2">Problem Statement</span>
+              <p class="text-zinc-400 text-sm leading-relaxed">High transaction fees from Virtual Accounts.</p>
+            </div>
+            <div>
+              <span class="inline-block px-3 py-1 bg-emerald-950 text-emerald-400 text-xs font-semibold rounded-lg mb-2">Solution & Impact</span>
+              <p class="text-zinc-400 text-sm leading-relaxed">Replaced virtual accounts with a custom transaction-matching mechanism, achieving <span class="font-semibold text-emerald-300">30% cost savings</span> while maintaining scalability.</p>
             </div>
           </div>
+        </div>
 
-          <div class="bg-zinc-950 border border-zinc-700 rounded-2xl p-6">
-            <strong class="block text-base mb-4 text-white">Automated COD Payouts & VA Status Scheduler</strong>
-            <div class="space-y-4">
-              <div>
-                <span class="inline-block px-3 py-1 bg-orange-950 text-orange-400 text-xs font-semibold rounded-lg mb-2">Problem Statement</span>
-                <p class="text-zinc-400 text-sm leading-relaxed">Slow and error-prone manual bank transfers to sellers plus missed Virtual Account status updates.</p>
-              </div>
-              <div>
-                <span class="inline-block px-3 py-1 bg-emerald-950 text-emerald-400 text-xs font-semibold rounded-lg mb-2">Solution & Impact</span>
-                <p class="text-zinc-400 text-sm leading-relaxed">Daily automated payouts combined with scheduled VA status reconciliation.</p>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
 
@@ -281,9 +262,9 @@
       </h3>
       
       <div class="space-y-6">
-        <!-- VISIBLE: 3 items -->
+        <!-- VISIBLE: items -->
         <div class="bg-zinc-950 border border-zinc-700 rounded-2xl p-6">
-          <strong class="block text-base mb-4 text-white">Pricing Management System Revamp</strong>
+          <strong class="block text-base mb-4 text-white">Pricing Management Core System</strong>
           <div class="space-y-4">
             <div>
               <span class="inline-block px-3 py-1 bg-orange-950 text-orange-400 text-xs font-semibold rounded-lg mb-2">Problem Statement</span>
@@ -297,15 +278,15 @@
         </div>
 
         <div class="bg-zinc-950 border border-zinc-700 rounded-2xl p-6">
-          <strong class="block text-base mb-4 text-white">Auto-Scheduling Logic</strong>
+          <strong class="block text-base mb-4 text-white">Auto-Scheduling Order</strong>
           <div class="space-y-4">
             <div>
               <span class="inline-block px-3 py-1 bg-orange-950 text-orange-400 text-xs font-semibold rounded-lg mb-2">Problem Statement</span>
-              <p class="text-zinc-400 text-sm leading-relaxed">CX team had to manually assign pickup orders, leading to inefficiency and delays.</p>
+              <p class="text-zinc-400 text-sm leading-relaxed">Manual assignment of pickup orders created operational inefficiencies and delays.</p>
             </div>
             <div>
               <span class="inline-block px-3 py-1 bg-emerald-950 text-emerald-400 text-xs font-semibold rounded-lg mb-2">Solution & Impact</span>
-              <p class="text-zinc-400 text-sm leading-relaxed">Latitude/Longitude based automatic branch matching within 25km radius.</p>
+              <p class="text-zinc-400 text-sm leading-relaxed">Implemented latitude/longitude-based auto-scheduling to assign orders to the nearest branch within a certain radius, reducing assignment time by ~60%.</p>
             </div>
           </div>
         </div>
@@ -313,32 +294,19 @@
         <!-- HIDDEN: extra items -->
         <div class="project-items-extra" id="logistics-extra">
           <div class="bg-zinc-950 border border-zinc-700 rounded-2xl p-6">
-            <strong class="block text-base mb-4 text-white">Auto Import Order (Blibli) + Auto Brush Logic</strong>
+            <strong class="block text-base mb-4 text-white">Bulk Import Order</strong>
             <div class="space-y-4">
               <div>
                 <span class="inline-block px-3 py-1 bg-orange-950 text-orange-400 text-xs font-semibold rounded-lg mb-2">Problem Statement</span>
-                <p class="text-zinc-400 text-sm leading-relaxed">1–2 hours daily manual order entry from email attachments and incorrect express type/fee assignment for packages under 0.509kg.</p>
+                <p class="text-zinc-400 text-sm leading-relaxed">High-volume order intake required repetitive manual entry, leading to time inefficiency and error-prone workflows.</p>
               </div>
               <div>
                 <span class="inline-block px-3 py-1 bg-emerald-950 text-emerald-400 text-xs font-semibold rounded-lg mb-2">Solution & Impact</span>
-                <p class="text-zinc-400 text-sm leading-relaxed">Automated email monitoring + weight-based auto correction. Saved 1–2 hours of manual work daily.</p>
+                <p class="text-zinc-400 text-sm leading-relaxed">Implemented a bulk import feature that eliminated repetitive data entry, saving 1–2 hours of manual work per day and improving data accuracy.</p>
               </div>
             </div>
           </div>
 
-          <div class="bg-zinc-950 border border-zinc-700 rounded-2xl p-6">
-            <strong class="block text-base mb-4 text-white">Retail PAD Model & Fallback Pricing</strong>
-            <div class="space-y-4">
-              <div>
-                <span class="inline-block px-3 py-1 bg-orange-950 text-orange-400 text-xs font-semibold rounded-lg mb-2">Problem Statement</span>
-                <p class="text-zinc-400 text-sm leading-relaxed">Lost retail volume due to lack of flexible payment options and frequent order rejections.</p>
-              </div>
-              <div>
-                <span class="inline-block px-3 py-1 bg-emerald-950 text-emerald-400 text-xs font-semibold rounded-lg mb-2">Solution & Impact</span>
-                <p class="text-zinc-400 text-sm leading-relaxed">Post-delivery payment model with automatic fallback to standard pricing when preferred express type is unavailable.</p>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
 
@@ -355,8 +323,36 @@
         Operational Integrity & Control
       </h3>
       
-      <!-- VISIBLE: 3 items -->
+      <!-- VISIBLE: items -->
       <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-zinc-950 border border-zinc-700 rounded-2xl p-6">
+          <strong class="block text-base mb-4 text-white">OMS In-house Migration</strong>
+          <div class="space-y-4">
+            <div>
+              <span class="inline-block px-3 py-1 bg-orange-950 text-orange-400 text-xs font-semibold rounded-lg mb-2">Problem Statement</span>
+              <p class="text-zinc-400 text-sm">Heavy dependency on legacy vendor systems with limited control and flexibility.</p>
+            </div>
+            <div>
+              <span class="inline-block px-3 py-1 bg-emerald-950 text-emerald-400 text-xs font-semibold rounded-lg mb-2">Solution & Impact</span>
+              <p class="text-zinc-400 text-sm">Full migration to in-house infrastructure with minimal downtime.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-zinc-950 border border-zinc-700 rounded-2xl p-6">
+          <strong class="block text-base mb-4 text-white">Client Management Engine</strong>
+          <div class="space-y-4">
+            <div>
+              <span class="inline-block px-3 py-1 bg-orange-950 text-orange-400 text-xs font-semibold rounded-lg mb-2">Problem Statement</span>
+              <p class="text-zinc-400 text-sm">Client configuration relied entirely on engineering, creating bottlenecks and slow turnaround for changes.</p>
+            </div>
+            <div>
+              <span class="inline-block px-3 py-1 bg-emerald-950 text-emerald-400 text-xs font-semibold rounded-lg mb-2">Solution & Impact</span>
+              <p class="text-zinc-400 text-sm">Built a self-service configuration system, enabling faster updates and reducing engineering dependency.</p>
+            </div>
+          </div>
+        </div>
+
         <div class="bg-zinc-950 border border-zinc-700 rounded-2xl p-6">
           <strong class="block text-base mb-4 text-white">POD in Review (Fraud Prevention)</strong>
           <div class="space-y-4">
@@ -366,52 +362,28 @@
             </div>
             <div>
               <span class="inline-block px-3 py-1 bg-emerald-950 text-emerald-400 text-xs font-semibold rounded-lg mb-2">Solution & Impact</span>
-              <p class="text-zinc-400 text-sm">Automatically flags waybills ≥ Rp 1M for manual audit before payout.</p>
+              <p class="text-zinc-400 text-sm">Automatically flags waybills with certain amounts for manual audit before payout.</p>
             </div>
           </div>
         </div>
 
-        <div class="bg-zinc-950 border border-zinc-700 rounded-2xl p-6">
-          <strong class="block text-base mb-4 text-white">Scan Collection Slicing + Claim Automation</strong>
-          <div class="space-y-4">
-            <div>
-              <span class="inline-block px-3 py-1 bg-orange-950 text-orange-400 text-xs font-semibold rounded-lg mb-2">Problem Statement</span>
-              <p class="text-zinc-400 text-sm">Poor visibility into aging packages and time-consuming manual claim validation.</p>
-            </div>
-            <div>
-              <span class="inline-block px-3 py-1 bg-emerald-950 text-emerald-400 text-xs font-semibold rounded-lg mb-2">Solution & Impact</span>
-              <p class="text-zinc-400 text-sm">Delivery vs non-delivery tracking with SLA-based automatic claim identification.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="bg-zinc-950 border border-zinc-700 rounded-2xl p-6">
-          <strong class="block text-base mb-4 text-white">Client Config Engine + Self-Service Exports</strong>
-          <div class="space-y-4">
-            <div>
-              <span class="inline-block px-3 py-1 bg-orange-950 text-orange-400 text-xs font-semibold rounded-lg mb-2">Problem Statement</span>
-              <p class="text-zinc-400 text-sm">100% dependency on tech team for client configuration and data extraction.</p>
-            </div>
-            <div>
-              <span class="inline-block px-3 py-1 bg-emerald-950 text-emerald-400 text-xs font-semibold rounded-lg mb-2">Solution & Impact</span>
-              <p class="text-zinc-400 text-sm">Code-free client configuration and self-service Excel exports.</p>
-            </div>
-          </div>
-        </div>
       </div>
 
-      <!-- HIDDEN: extra 3 items -->
+        
+        
+
+      <!-- HIDDEN: items -->
       <div class="project-items-extra-grid grid md:grid-cols-3 gap-6 mt-6" id="integrity-extra">
         <div class="bg-zinc-950 border border-zinc-700 rounded-2xl p-6">
           <strong class="block text-base mb-4 text-white">Automated Account Deactivation</strong>
           <div class="space-y-4">
             <div>
               <span class="inline-block px-3 py-1 bg-orange-950 text-orange-400 text-xs font-semibold rounded-lg mb-2">Problem Statement</span>
-              <p class="text-zinc-400 text-sm">Security vulnerability from inactive or resigned employee accounts remaining active.</p>
+              <p class="text-zinc-400 text-sm">Inactive or resigned employee accounts remained active, creating potential security risks.</p>
             </div>
             <div>
               <span class="inline-block px-3 py-1 bg-emerald-950 text-emerald-400 text-xs font-semibold rounded-lg mb-2">Solution & Impact</span>
-              <p class="text-zinc-400 text-sm">Cron job automatically deactivates accounts after 30 days of inactivity.</p>
+              <p class="text-zinc-400 text-sm">Implemented an automated deactivation system triggered by inactivity thresholds, improving security and operational efficiency.</p>
             </div>
           </div>
         </div>
@@ -431,18 +403,21 @@
         </div>
 
         <div class="bg-zinc-950 border border-zinc-700 rounded-2xl p-6">
-          <strong class="block text-base mb-4 text-white">OMS In-house Migration</strong>
+          <strong class="block text-base mb-4 text-white">Scan Collection Slicing</strong>
           <div class="space-y-4">
             <div>
               <span class="inline-block px-3 py-1 bg-orange-950 text-orange-400 text-xs font-semibold rounded-lg mb-2">Problem Statement</span>
-              <p class="text-zinc-400 text-sm">Heavy dependency on legacy vendor systems with limited control and flexibility.</p>
+              <p class="text-zinc-400 text-sm">Undelivered packages were not consistently returned, with no branch-level scan to confirm receipt.</p>
             </div>
             <div>
               <span class="inline-block px-3 py-1 bg-emerald-950 text-emerald-400 text-xs font-semibold rounded-lg mb-2">Solution & Impact</span>
-              <p class="text-zinc-400 text-sm">Full migration to in-house infrastructure with minimal downtime.</p>
+              <p class="text-zinc-400 text-sm">Implemented an admin-driven scan collection system with SLA monitoring, improving visibility and ensuring package accountability.</p>
             </div>
           </div>
         </div>
+
+
+
       </div>
 
       <button class="expand-btn mt-6 w-full flex items-center justify-center gap-2 py-3 rounded-2xl border border-zinc-700 text-zinc-400 hover:text-white hover:border-zinc-500 text-sm font-medium transition-colors" data-target="integrity-extra">
@@ -464,34 +439,34 @@
     <div class="space-y-8">
       <div class="flex flex-col md:flex-row gap-8 project-card bg-white dark:bg-zinc-900 rounded-3xl p-8 border border-zinc-100 dark:border-zinc-800">
         <div class="md:w-1/3">
-          <p class="font-semibold">Jatis Solutions</p>
+          <p class="font-semibold">Jatis Solutions | Jan 2019 – Jul 2019</p>
           <p class="text-zinc-500 dark:text-zinc-400">Java Developer</p>
         </div>
         <div class="md:w-2/3 text-zinc-600 dark:text-zinc-400">
-          Resolved production bugs and enhanced SQL logic for BCA Avantrade Mutual Fund system to ensure regulatory compliance.
+          Resolved production bugs and enhanced SQL logic for BCA Avantrade Mutual Fund system using Java; performed enhancement to align with regulatory compliance.
         </div>
       </div>
       <div class="flex flex-col md:flex-row gap-8 project-card bg-white dark:bg-zinc-900 rounded-3xl p-8 border border-zinc-100 dark:border-zinc-800">
         <div class="md:w-1/3">
-          <p class="font-semibold">Kognitif Schema</p>
+          <p class="font-semibold">Kognitif Schema | Sep 2018 – Dec 2018</p>
           <p class="text-zinc-500 dark:text-zinc-400">IT Implementation Consultant</p>
         </div>
         <div class="md:w-2/3 text-zinc-600 dark:text-zinc-400">
-          Supported Bank Mandiri core banking project with SOAP/XML validation via Postman and user deployment training.
+          Supported Bank Mandiri core banking project development and user deployment training.
         </div>
       </div>
       <div class="flex flex-col md:flex-row gap-8 project-card bg-white dark:bg-zinc-900 rounded-3xl p-8 border border-zinc-100 dark:border-zinc-800">
         <div class="md:w-1/3">
-          <p class="font-semibold">Lightstream Analytics</p>
+          <p class="font-semibold">Lightstream Analytics | May 2017 – Jul 2018</p>
           <p class="text-zinc-500 dark:text-zinc-400">IT Technical Consultant</p>
         </div>
         <div class="md:w-2/3 text-zinc-600 dark:text-zinc-400">
-          Built centralized P&amp;L and budgeting systems using Jedox EPM and designed ETL workflows for Eagle High Plantation.
+          Built centralized P&amp;L and budgeting systems using Jedox EPM and designed ETL workflows for Eagle High Plantation Tbk.
         </div>
       </div>
       <div class="flex flex-col md:flex-row gap-8 project-card bg-white dark:bg-zinc-900 rounded-3xl p-8 border border-zinc-100 dark:border-zinc-800">
         <div class="md:w-1/3">
-          <p class="font-semibold">Blibli.com</p>
+          <p class="font-semibold">Blibli.com | Mar 2016 – Feb 2017</p>
           <p class="text-zinc-500 dark:text-zinc-400">Software Developer Intern</p>
         </div>
         <div class="md:w-2/3 text-zinc-600 dark:text-zinc-400">
@@ -502,25 +477,27 @@
   </section>
 
   <!-- Education &amp; Toolkit -->
-  <section class="max-w-6xl mx-auto px-6 py-20 bg-white dark:bg-zinc-900 border-t border-zinc-200 dark:border-zinc-800">
+  <section id="education" class="max-w-6xl mx-auto px-6 py-20 bg-white dark:bg-zinc-900 border-t border-zinc-200 dark:border-zinc-800">
     <div class="grid md:grid-cols-2 gap-16">
       <div>
         <h2 class="text-4xl font-semibold tracking-tight mb-8 section-header">Education</h2>
-        <div class="bg-zinc-50 dark:bg-zinc-950 rounded-3xl p-8 border border-zinc-100 dark:border-zinc-800">
-          <p class="text-zinc-600 dark:text-zinc-400">Bachelor of Computer Science, Binus University — 2017</p>
+        <div class="bg-zinc-50 dark:bg-zinc-950 rounded-3xl p-8 border border-zinc-100 dark:border-zinc-800">          
+          <p class="text-zinc-600 dark:text-zinc-400"><b>Binus University (2013-2017)</b></p>
+          <p class="text-zinc-600 dark:text-zinc-400">Bachelor of Computer Science | GPA: 3.82 / 4.00</p>
         </div>
       </div>
       <div>
         <h2 class="text-4xl font-semibold tracking-tight mb-8 section-header">Technical &amp; Product Toolkit</h2>
         <div class="flex flex-wrap gap-3">
-          <span class="bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 px-5 py-2 rounded-2xl text-sm font-medium">JIRA &amp; Confluence</span>
-          <span class="bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 px-5 py-2 rounded-2xl text-sm font-medium">Figma</span>
-          <span class="bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 px-5 py-2 rounded-2xl text-sm font-medium">Postman (SOAP/XML)</span>
+          <span class="bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 px-5 py-2 rounded-2xl text-sm font-medium">JIRA &amp; Confluence</span>          
+          <span class="bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 px-5 py-2 rounded-2xl text-sm font-medium">Agile / Scrum</span>          
+          <span class="bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 px-5 py-2 rounded-2xl text-sm font-medium">Figma</span>          
           <span class="bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 px-5 py-2 rounded-2xl text-sm font-medium">SQL (MySQL / PostgreSQL)</span>
-          <span class="bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 px-5 py-2 rounded-2xl text-sm font-medium">Java Spring Framework</span>
+          <span class="bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 px-5 py-2 rounded-2xl text-sm font-medium">Postman</span>          
+          <span class="bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 px-5 py-2 rounded-2xl text-sm font-medium">Advanced Excel</span>       
+          <span class="bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 px-5 py-2 rounded-2xl text-sm font-medium">ETL Workflows</span>          
+          <span class="bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 px-5 py-2 rounded-2xl text-sm font-medium">Java Spring Framework</span>   
           <span class="bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 px-5 py-2 rounded-2xl text-sm font-medium">Jedox EPM</span>
-          <span class="bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 px-5 py-2 rounded-2xl text-sm font-medium">ETL Workflows</span>
-          <span class="bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 px-5 py-2 rounded-2xl text-sm font-medium">Agile / Scrum</span>
         </div>
       </div>
     </div>
@@ -531,29 +508,36 @@
     <div class="max-w-2xl mx-auto text-center">
       <h2 class="text-4xl font-semibold tracking-tight mb-6">Let's Connect</h2>
       <p class="text-lg text-zinc-600 dark:text-zinc-400 mb-10">
-        I'm always open to conversations about product strategy, logistics technology, fintech systems, or potential Senior Product Management opportunities.
+        I'm always open to conversations about product strategy, logistics technology, fintech systems, or potential Product Management opportunities.
       </p>
 
       <div class="flex flex-col sm:flex-row justify-center gap-6">
-        <a href="mailto:your.email@example.com" 
+          <a href="https://wa.me/6285281996871?text=Hi%20Erwin,%20I%20saw%20your%20portfolio%20and%20want%20to%20connect!" target="_blank"
            class="group flex-1 flex items-center justify-center gap-4 bg-white dark:bg-zinc-900 border border-zinc-300 dark:border-zinc-700 hover:border-orange-500 px-8 py-6 rounded-3xl transition-all">
-          <div class="w-12 h-12 bg-zinc-100 dark:bg-zinc-800 rounded-2xl flex items-center justify-center text-2xl group-hover:scale-110 transition">✉️</div>
+          <div class="w-20 h-12 bg-zinc-100 dark:bg-zinc-800 rounded-2xl flex items-center justify-center text-2xl group-hover:scale-110 transition"><i class="fab fa-whatsapp"></i></div>
           <div class="text-left">
-            <p class="font-medium text-lg">Send me an email</p>
-            <p class="text-zinc-500 dark:text-zinc-400">your.email@example.com</p>
+            <p class="font-medium text-lg">Chat me on WhatsApp</p>
           </div>
         </a>
 
-        <a href="https://linkedin.com/in/yourprofile" target="_blank"
+        <a href="https://www.linkedin.com/in/erwin-lim-12a8ab252/" target="_blank"
            class="group flex-1 flex items-center justify-center gap-4 bg-white dark:bg-zinc-900 border border-zinc-300 dark:border-zinc-700 hover:border-orange-500 px-8 py-6 rounded-3xl transition-all">
-          <div class="w-12 h-12 bg-zinc-100 dark:bg-zinc-800 rounded-2xl flex items-center justify-center text-2xl group-hover:scale-110 transition">
+          <div class="w-20 h-12 bg-zinc-100 dark:bg-zinc-800 rounded-2xl flex items-center justify-center text-2xl group-hover:scale-110 transition">
             <i class="fa-brands fa-linkedin"></i>
           </div>
           <div class="text-left">
             <p class="font-medium text-lg">Connect on LinkedIn</p>
-            <p class="text-zinc-500 dark:text-zinc-400">linkedin.com/in/yourprofile</p>
           </div>
         </a>
+
+        <a href="mailto:lym.erwin@gmail.com" 
+           class="group flex-1 flex items-center justify-center gap-4 bg-white dark:bg-zinc-900 border border-zinc-300 dark:border-zinc-700 hover:border-orange-500 px-8 py-6 rounded-3xl transition-all">
+          <div class="w-20 h-12 bg-zinc-100 dark:bg-zinc-800 rounded-2xl flex items-center justify-center text-2xl group-hover:scale-110 transition">✉️</div>
+          <div class="text-left">
+            <p class="font-medium text-lg">Send me an email</p>
+          </div>
+        </a>
+        
       </div>
     </div>
   </section>
@@ -561,8 +545,7 @@
   <!-- Footer -->
   <footer class="bg-zinc-900 text-white py-10 text-center text-sm">
     <div class="max-w-6xl mx-auto px-6">
-      <p>© 2026 Erwin • Senior Product Manager • Jakarta, Indonesia</p>
-      <p class="text-zinc-500 mt-2">Built as a modern portfolio with AI assistant — hosted 100% free on GitHub Pages</p>
+      <p>©<script>document.write(new Date().getFullYear());</script> Erwin Lim • Senior Product Manager • Jakarta, Indonesia</p>
     </div>
   </footer>
 
@@ -579,7 +562,7 @@
         <div class="w-8 h-8 bg-orange-500 rounded-2xl flex items-center justify-center text-sm font-semibold">E</div>
         <div>
           <p class="font-medium text-sm">Chat with Erwin</p>
-          <p class="text-xs text-zinc-400">Powered by AI • Knows my full experience</p>
+          <p class="text-xs text-zinc-400">Powered by AI •</p>
         </div>
       </div>
       <button id="close-chat" class="text-zinc-400 hover:text-white text-2xl">✕</button>
@@ -589,17 +572,17 @@
 
     <div class="p-4 border-t border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900">
       <div class="flex gap-2">
-        <input id="chat-input" type="text" placeholder="Ask about my projects, cost savings, or availability..." 
+        <input id="chat-input" type="text" placeholder="Enter to send chat ..." 
                class="flex-1 px-5 py-3 bg-zinc-100 dark:bg-zinc-800 border border-transparent focus:border-orange-500 rounded-2xl text-sm focus:outline-none">
         <button id="send-message" class="px-6 bg-orange-500 hover:bg-orange-600 text-white rounded-2xl font-medium">Send</button>
       </div>
-      <p class="text-[10px] text-center text-zinc-400 mt-2">Ask about my portofolio</p>
+      <p class="text-[10px] text-center text-zinc-400 mt-2">Ask about my portfolio</p>
     </div>
   </div>
 
   <script>
     /* ==================== TAILWIND CONFIG ==================== */
-    tailwind.config = { darkMode: 'class' };
+    // tailwind.config = { darkMode: 'class' };
 
     /* ==================== MOBILE MENU ==================== */
     const mobileButton = document.getElementById('mobile-menu-button');
@@ -704,8 +687,7 @@ You are helpful, professional, and concise. Answer questions about my experience
       chatMessages.appendChild(typing);
       chatMessages.scrollTop = chatMessages.scrollHeight;
 
-      try {
-        // === CHANGE THIS URL TO YOUR DEPLOYED PROXY ===
+      try {        
         const proxyUrl = 'PROXY_URL_PLACEHOLDER';
         const response = await fetch(proxyUrl, {
           method: 'POST',
@@ -718,7 +700,7 @@ You are helpful, professional, and concise. Answer questions about my experience
         addMessage(data.reply || "Sorry, I couldn't generate a response.", false);
       } catch {
         typing.remove();
-        addMessage("The AI assistant is currently offline. Feel free to reach out directly at lym.erwin@gmail.com.", false);
+        addMessage("The AI assistant is currently offline. Feel free to reach out directly via WhatsApp or LinkedIn.", false);
       } finally {
         isProcessing = false;
         sendButton.disabled = false;
